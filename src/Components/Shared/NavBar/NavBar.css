@@ -3,8 +3,12 @@
     font-weight: 700;
 }
 
-.btn-style {
+.nav-btn-style {
     background-color: #24316B;
     color: white;
     border-radius: 10px;
+}
+
+.nav-icon {
+    font-size: 19px;
 }
