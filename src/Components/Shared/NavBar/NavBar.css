@@ -1,0 +1,10 @@
+.navbar p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn-style {
+    background-color: #24316B;
+    color: white;
+    border-radius: 10px;
+}
