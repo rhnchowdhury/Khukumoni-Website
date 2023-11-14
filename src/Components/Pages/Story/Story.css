@@ -1,0 +1,23 @@
+.story-h2 {
+    color: #24316B;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.story-h1 {
+    color: #24316B;
+    font-size: 68px;
+    font-weight: 700;
+}
+
+.story-p {
+    font-size: 20px;
+    line-height: 30.48px;
+    text-align: left;
+}
+
+.story-span {
+    font-size: 22px;
+    font-weight: 700;
+}
