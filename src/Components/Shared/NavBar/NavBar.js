@@ -4,6 +4,7 @@ import { IoMailSharp } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa";
 import './NavBar.css';
 import logo from '../../../assets/logos/head-logo.png';
+import Menu from '../Menus/Menu';
 
 const NavBar = () => {
     return (
@@ -35,6 +36,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
+            <Menu></Menu>
         </div>
     );
 };
