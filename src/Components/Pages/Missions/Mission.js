@@ -5,6 +5,7 @@ import img2 from '../../../assets/home-imgs/mission-img2.png';
 import img3 from '../../../assets/home-imgs/mission-img3.png';
 import imgBg from '../../../assets/logos/frame-2.svg';
 import imgBg2 from '../../../assets/logos/frame-4.svg';
+import imgBg3 from '../../../assets/home-imgs/school-bg.png';
 
 const Mission = () => {
     return (
@@ -23,7 +24,7 @@ const Mission = () => {
                             </div>
                             <p className='mission-p mt-8'>To make significant improvement of underprivileged people through educational program .Children in our society with nourishment and educational program against hunger around the country to protect lives, eliminate poverty through education and establish social justice.</p>
                             <div className="card-actions justify-end">
-                                <button className="btn bg-[#24316B] text-white hover:bg-[#24316B] text-lg">Learn More</button>
+                                <button className="mission-btn">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -35,26 +36,31 @@ const Mission = () => {
                             </div>
                             <p className='mission-p mt-8'>We are working to build a country free of illiteracy, hunger, poverty and make people realize their rights to become respected citizens.</p>
                             <div className="card-actions justify-end">
-                                <button className="btn bg-[#24316B] text-white hover:bg-[#24316B] text-lg">Learn More</button>
+                                <button className="mission-btn">Learn More</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='flex'>
-                <div>
-                    <img src={img3} alt="" />
+                <div className=' z-50'>
+                    <img src={imgBg3} alt="" className='mt-60 relative w-[1200px] h-[600px] mission-bg-img ml-32 ' />
+                    {/* <img src={imgBg3} alt="" className='mt-60 relative h-[400px] mission-bg-img ml-32 ' /> */}
+                    <div className='-mt-[794px] absolute'>
+                        {/* <div className='-mt-[750px] absolute'> */}
+                        <img src={img3} alt="" className='w-[473px] ml-52' />
+                    </div>
                 </div>
                 <div>
-                    <div>
-                        <img src={imgBg2} alt="" className='relative w-[1200px] ' />
-                        <div className='-mt-[450px] absolute ml-72 mr-6'>
+                    <div className='relative z-0'>
+                        <img src={imgBg2} alt="" className='w-[1800px] -z-10' />
+                        <div className=' -mt-[450px] absolute ml-72 mr-6'>
+                            {/* <div className='-mt-[450px] absolute ml-72 mr-6'> */}
                             <h2 className='mission-sec-h2 text-[#24316B] -mt-96'>Khukumoni <br /> School</h2>
                             <p className='mission-p mt-8'>Free Primary School Education for underprivileged children, where we teach more than 5 hundred children in our 5 school branches around the Dhaka city. Location of schools are given below:
-
                                 <br /> a) Karwan Bazar Railway Slum(beside Tejgaon Truck Stand) <br /> b) Nandipara Lane no 1, Bashabo. <br /> c) Italy Market, Sonir Akhra. <br /> d) Road 12/A, Dhanmondi Lakeshore. <br /> e) Launch Terminal, Sadarghat.
-
                             </p>
+                            <button className="mission-btn mt-8">Learn More</button>
                         </div>
                     </div>
 
