@@ -27,6 +27,20 @@
     font-weight: 700;
 }
 
+.mission-sec-h2 {
+    color: #24316B;
+    /* text-align: center; */
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.mission-h2 {
+    color: #24316B;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 .mission-p {
     font-size: 25px;
     line-height: 31px;
