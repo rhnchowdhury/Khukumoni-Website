@@ -7,6 +7,7 @@ import imgBg from '../../../assets/logos/frame-2.svg';
 import imgBg2 from '../../../assets/logos/frame-4.svg';
 import imgBg3 from '../../../assets/home-imgs/school-bg.png';
 import imgBg4 from '../../../assets/logos/frame-5.svg';
+import Project from '../Projects/Project/Project';
 
 const Mission = () => {
     return (
@@ -67,11 +68,11 @@ const Mission = () => {
                 </div>
             </div>
             <div className='-mt-[500px] z-50 absolute'>
-                <div className=''>
-                    <img src={imgBg4} alt="" className='' />
+                <div>
+                    <img src={imgBg4} alt="" />
                 </div>
             </div>
-
+            <Project></Project>
         </div >
     );
 };

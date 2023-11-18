@@ -7,8 +7,8 @@ const Menu = () => {
         <div className='mt-12 z-50'>
             <div className="menu bg-[#253E88] ">
                 <div className='space-x-20 font-bold text-xl text-white relative mx-8'>
-                    <Link>Home</Link>
-                    <Link>About Us</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/about'>About Us</Link>
                     <Link>Our Program</Link>
                     <Link>Be a Volunteer</Link>
                     <Link>News</Link>
