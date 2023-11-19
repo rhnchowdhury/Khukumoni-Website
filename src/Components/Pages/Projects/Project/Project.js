@@ -11,39 +11,39 @@ const Project = () => {
             <div className=''>
                 <img src={imgBg} alt="" />
             </div>
-            <div className='grid grid-cols-2 gap-5 mx-60 -mt-[1360px] '>
-                <div className="card w-96 h-60 rounded-3xl bg-[#24316B]">
-                    <div className="card-body">
-                        <h2 className="card-title text-7xl text-center font-bold text-white">Our Projects</h2>
+            <div className='grid grid-cols-2 gap-5 mx-32 -mt-[1360px] '>
+                <div className="card w-[500px] h-[350px] rounded-3xl bg-[#24316B]">
+                    <div className="card-body top-96">
+                        <h2 className="card-title text-8xl text-center font-extrabold text-white">Our  Projects</h2>
                     </div>
                 </div>
-                <div className="card w-96">
+                <div className="card w-[500px]">
                     <figure><img src={img1} alt="Shoes" className='relative' /></figure>
-                    <div className="card-body absolute top-48 text-white ">
-                        <h2 className="card-title text-5xl text-center font-bold">Khukumoni Stipends</h2>
+                    <div className="card-body absolute top-72 text-white ">
+                        <h2 className="card-title text-6xl text-center font-bold">Khukumoni Stipends</h2>
                     </div>
                 </div>
-                <div className="card w-96 -mt-36">
+                <div className="card w-[500px] -mt-36">
                     <figure><img src={img2} alt="Shoes" className='relative' /></figure>
-                    <div className="card-body absolute top-56 text-white ">
-                        <h2 className="card-title text-5xl text-center font-bold">Food For All</h2>
+                    <div className="card-body absolute top-80 text-white ">
+                        <h2 className="card-title text-6xl text-center font-bold">Food For All</h2>
                     </div>
                 </div>
-                <div className="card w-96">
+                <div className="card w-[500px]">
                     <figure><img src={img3} alt="Shoes" className='relative' /></figure>
-                    <div className="card-body absolute top-48 text-white ">
-                        <h2 className="card-title text-5xl text-center font-bold">Cleansing Program</h2>
+                    <div className="card-body absolute top-72 text-white ">
+                        <h2 className="card-title text-6xl text-center font-bold">Cleansing Program</h2>
                     </div>
                 </div>
-                <div className="card w-96 -mt-36">
+                <div className="card w-[500px] -mt-36">
                     <figure><img src={img1} alt="Shoes" className='relative' /></figure>
-                    <div className="card-body absolute top-48 text-white ">
-                        <h2 className="card-title text-5xl text-center font-bold">Khukumoni Stipends</h2>
+                    <div className="card-body absolute top-72 text-white ">
+                        <h2 className="card-title text-6xl text-center font-bold">Khukumoni Stipends</h2>
                     </div>
                 </div>
-                <div className="card w-96 rounded-3xl bg-[#24316B] ">
-                    <div className="card-body">
-                        <h2 className="card-title text-7xl text-center font-bold text-white mt-12 ml-5">More...</h2>
+                <div className="card w-[500px]  rounded-3xl bg-[#24316B] ">
+                    <div className="card-body mt-28">
+                        <h2 className="card-title text-8xl text-center font-extrabold text-white ml-5">More...</h2>
                     </div>
                 </div>
             </div>
