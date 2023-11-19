@@ -67,7 +67,7 @@ const Mission = () => {
                     </div>
                 </div>
             </div>
-            <div className='-mt-[500px] z-50 absolute'>
+            <div className='-mt-[500px] z-20 absolute'>
                 <div>
                     <img src={imgBg4} alt="" />
                 </div>

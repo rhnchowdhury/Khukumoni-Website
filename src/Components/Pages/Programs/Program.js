@@ -17,11 +17,7 @@ const Program = () => {
                     <h2 className="card-title text-5xl text-center font-bold">Food For All</h2>
                 </div>
             </div>
-            <div className="card w-96 bg-[#24316B]">
-                <div className="card-body">
-                    <h2 className="card-title text-7xl text-center font-bold text-white">Our Projects</h2>
-                </div>
-            </div>
+
             <div className="card w-96 bg-[#24316B] text-center">
                 <div className="card-body text-center">
                     <h2 className="card-title text-7xl  font-bold text-white">More...</h2>
