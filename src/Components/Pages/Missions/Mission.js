@@ -47,9 +47,7 @@ const Mission = () => {
             <div className='flex -z-50'>
                 <div className=' '>
                     <img src={imgBg3} alt="" className='mt-60 relative w-[1200px] h-[600px] mission-bg-img ml-32 ' />
-                    {/* <img src={imgBg3} alt="" className='mt-60 relative h-[400px] mission-bg-img ml-32 ' /> */}
                     <div className='-mt-[794px] absolute'>
-                        {/* <div className='-mt-[750px] absolute'> */}
                         <img src={img3} alt="" className='w-[473px] ml-52' />
                     </div>
                 </div>
@@ -57,7 +55,6 @@ const Mission = () => {
                     <div className='relative -z-40'>
                         <img src={imgBg2} alt="" className='w-[1800px]' />
                         <div className=' -mt-[450px] absolute ml-72 mr-6'>
-                            {/* <div className='-mt-[450px] absolute ml-72 mr-6'> */}
                             <h2 className='mission-sec-h2 -mt-96'>Khukumoni <br /> School</h2>
                             <p className='mission-p mt-8 text-[#24316B]'>Free Primary School Education for underprivileged children, where we teach more than 5 hundred children in our 5 school branches around the Dhaka city. Location of schools are given below:
                                 <br /> a) Karwan Bazar Railway Slum(beside Tejgaon Truck Stand) <br /> b) Nandipara Lane no 1, Bashabo. <br /> c) Italy Market, Sonir Akhra. <br /> d) Road 12/A, Dhanmondi Lakeshore. <br /> e) Launch Terminal, Sadarghat.

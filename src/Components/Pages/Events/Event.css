@@ -1,0 +1,12 @@
+.event-h2 {
+    color: #24316B;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.event-p {
+    line-height: 18px;
+    font-size: 10px;
+    text-align: center;
+}
