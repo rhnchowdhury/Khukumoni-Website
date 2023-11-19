@@ -1,6 +1,6 @@
 import React from 'react';
-import img1 from '../../../assets/home-imgs/story-img.png';
-import bgImg from '../../../assets/logos/frame-1.svg';
+import img1 from '../../../../assets/home-imgs/story-img.png';
+import bgImg from '../../../../assets/logos/frame-1.svg';
 import './Story.css';
 
 const Story = () => {

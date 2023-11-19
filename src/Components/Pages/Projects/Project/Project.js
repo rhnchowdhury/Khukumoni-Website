@@ -3,7 +3,7 @@ import img1 from '../../../../assets/home-imgs/project-img1.png';
 import img2 from '../../../../assets/home-imgs/project-img2.png';
 import img3 from '../../../../assets/home-imgs/project-img3.png';
 import imgBg from '../../../../assets/logos/frame-3.svg';
-import Event from '../../Events/Event';
+import Event from '../../HomePages/Events/Event';
 
 const Project = () => {
     return (
@@ -42,7 +42,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div className="card w-[500px]  rounded-3xl bg-[#24316B] ">
-                    <div className="card-body mt-28">
+                    <div className="card-body mt-24">
                         <h2 className="card-title text-8xl text-center font-extrabold text-white ml-5">More...</h2>
                     </div>
                 </div>

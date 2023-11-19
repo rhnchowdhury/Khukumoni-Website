@@ -1,8 +1,10 @@
 import React from 'react';
-import Carousel from '../../Pages/Carousel/Carousel';
-import Story from '../../Pages/Story/Story';
-import News from '../../Pages/News/News';
-import Mission from '../../Pages/Missions/Mission';
+import Carousel from '../../Pages/HomePages/Carousel/Carousel';
+import Story from '../../Pages/HomePages/Story/Story';
+import News from '../../Pages/HomePages/News/News';
+import Mission from '../../Pages/HomePages/Missions/Mission';
+import Project from '../../Pages/Projects/Project/Project';
+
 
 const Home = () => {
     return (
@@ -11,6 +13,7 @@ const Home = () => {
             <Story></Story>
             <News></News>
             <Mission></Mission>
+            <Project></Project>
         </div>
     );
 };

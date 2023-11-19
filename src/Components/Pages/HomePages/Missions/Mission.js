@@ -1,13 +1,12 @@
 import React from 'react';
+import img1 from '../../../../assets/home-imgs/mission-img1.png';
+import img2 from '../../../../assets/home-imgs/mission-img2.png';
+import img3 from '../../../../assets/home-imgs/mission-img3.png';
+import imgBg from '../../../../assets/logos/frame-2.svg';
+import imgBg2 from '../../../../assets/logos/frame-4.svg';
+import imgBg3 from '../../../../assets/home-imgs/school-bg.png';
+import imgBg4 from '../../../../assets/logos/frame-5.svg';
 import './Mission.css';
-import img1 from '../../../assets/home-imgs/mission-img1.png';
-import img2 from '../../../assets/home-imgs/mission-img2.png';
-import img3 from '../../../assets/home-imgs/mission-img3.png';
-import imgBg from '../../../assets/logos/frame-2.svg';
-import imgBg2 from '../../../assets/logos/frame-4.svg';
-import imgBg3 from '../../../assets/home-imgs/school-bg.png';
-import imgBg4 from '../../../assets/logos/frame-5.svg';
-import Project from '../Projects/Project/Project';
 
 const Mission = () => {
     return (
@@ -69,7 +68,6 @@ const Mission = () => {
                     <img src={imgBg4} alt="" />
                 </div>
             </div>
-            <Project></Project>
         </div >
     );
 };

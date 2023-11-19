@@ -6,11 +6,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import img1 from '../../../assets/Carousel-img/img-1.png';
-import img2 from '../../../assets/Carousel-img/img-2.jpg';
-import img3 from '../../../assets/Carousel-img/img-3.jpg';
-import img4 from '../../../assets/Carousel-img/img-4.jpg';
-import img5 from '../../../assets/Carousel-img/img-5.jpg';
+import img1 from '../../../../assets/Carousel-img/img-1.png';
+import img2 from '../../../../assets/Carousel-img/img-2.jpg';
+import img3 from '../../../../assets/Carousel-img/img-3.jpg';
+import img4 from '../../../../assets/Carousel-img/img-4.jpg';
+import img5 from '../../../../assets/Carousel-img/img-5.jpg';
 
 const Carousel = () => {
     return (

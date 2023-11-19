@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../../../assets/home-imgs/events-img1.png';
-import img2 from '../../../assets/home-imgs/events-img2.png';
-import img3 from '../../../assets/home-imgs/events-img3.png';
+import img1 from '../../../../assets/home-imgs/events-img1.png';
+import img2 from '../../../../assets/home-imgs/events-img2.png';
+import img3 from '../../../../assets/home-imgs/events-img3.png';
 import './Event.css';
 
 const Event = () => {
