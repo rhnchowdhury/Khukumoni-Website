@@ -1,9 +1,13 @@
 import React from 'react';
+import img1 from '../../../assets/home-imgs/project-img2.png';
+import img2 from '../../../assets/home-imgs/project-img1.png';
+import img3 from '../../../assets/home-imgs/project-img3.png';
+import img4 from '../../../assets/home-imgs/project-img4.png';
 import './About.css';
 
 const About = () => {
     return (
-        <div className='ml-8'>
+        <div className='ml-16'>
             <h2 className='about-h2 my-5'>About Us</h2>
             <p className='about-p'><span className='about-span'>Khukumoni Foundations</span> is a non-profit organization committed to making a positive impact on the lives of underserved communities in Bangladesh. Founded in [Year], our mission is to promote sustainable development, education, healthcare, and social welfare, with a focus on empowering individuals and communities to break the cycle of poverty.
                 <br />  <br />
@@ -44,6 +48,41 @@ const About = () => {
                 <span className='about-span'>Get Involved</span> <br />
                 We welcome individuals, organizations, and businesses to join hands with us in our mission to create a better Bangladesh. Your support can make a world of difference.
                 Join us in transforming lives, one community at a time.</p>
+            <div>
+                <h2 className='about-h2 my-8'>Our Projects</h2>
+                <div className='grid grid-cols-2 mx-56 gap-12'>
+                    <div className="card w-96">
+                        <figure><img src={img1} alt="Shoes" className='relative' /></figure>
+                        <div className="card-body absolute top-56 text-white ">
+                            <h2 className="card-title text-5xl text-center font-bold">Food For All</h2>
+                        </div>
+                    </div>
+                    <div className="card w-96">
+                        <figure><img src={img2} alt="Shoes" className='relative' /></figure>
+                        <div className="card-body absolute top-48 text-white ">
+                            <h2 className="card-title text-5xl text-center font-bold">Khukumoni Stipends</h2>
+                        </div>
+                    </div>
+                    <div className="card w-96">
+                        <figure><img src={img2} alt="Shoes" className='relative' /></figure>
+                        <div className="card-body absolute top-40 text-white ">
+                            <h2 className="card-title text-5xl text-center font-bold">New Dress Giving Program</h2>
+                        </div>
+                    </div>
+                    <div className="card w-96">
+                        <figure><img src={img3} alt="Shoes" className='relative' /></figure>
+                        <div className="card-body absolute top-48 text-white ">
+                            <h2 className="card-title text-5xl text-center font-bold">Cleansing Program</h2>
+                        </div>
+                    </div>
+                    <div className="card w-96 ml-56">
+                        <figure><img src={img4} alt="Shoes" className='relative' /></figure>
+                        <div className="card-body absolute top-56 text-white ">
+                            <h2 className="card-title text-5xl text-center font-bold">Khukumoni School</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

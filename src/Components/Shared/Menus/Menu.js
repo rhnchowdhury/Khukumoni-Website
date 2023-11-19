@@ -9,7 +9,7 @@ const Menu = () => {
                 <div className='space-x-20 font-bold text-xl text-white relative mx-8'>
                     <Link to='/'>Home</Link>
                     <Link to='/about'>About Us</Link>
-                    <Link>Our Program</Link>
+                    <Link to='/program'>Our Program</Link>
                     <Link>Be a Volunteer</Link>
                     <Link>News</Link>
                     <Link>Contact</Link>
