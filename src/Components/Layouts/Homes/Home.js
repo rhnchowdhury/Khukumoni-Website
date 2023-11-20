@@ -5,7 +5,6 @@ import News from '../../Pages/HomePages/News/News';
 import Mission from '../../Pages/HomePages/Missions/Mission';
 import Project from '../../Pages/Projects/Project/Project';
 
-
 const Home = () => {
     return (
         <div>
