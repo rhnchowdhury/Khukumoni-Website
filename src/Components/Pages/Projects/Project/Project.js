@@ -7,7 +7,7 @@ import Event from '../../HomePages/Events/Event';
 
 const Project = () => {
     return (
-        <div className='absolute z-40'>
+        <div className='relative z-20'>
             <div className=''>
                 <img src={imgBg} alt="" />
             </div>
