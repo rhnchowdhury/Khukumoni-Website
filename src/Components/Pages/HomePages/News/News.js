@@ -3,7 +3,7 @@ import './News.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import vdo1 from '../../../../assets/videos/Somoy TV.mp4';
 import vdo2 from '../../../../assets/videos/Jamuna TV.mp4';
@@ -19,11 +19,8 @@ const News = () => {
                     slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
-                    // pagination={{
-                    //     clickable: true,
-                    // }}
                     navigation={true}
-                    modules={[Pagination, Navigation]}
+                    modules={[Navigation]}
                     className="mySwiper mt-20"
                 >
                     <SwiperSlide>
