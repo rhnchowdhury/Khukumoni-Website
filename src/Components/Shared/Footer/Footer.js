@@ -9,9 +9,7 @@ const Footer = () => {
     return (
         <div className='mt-8'>
             <footer className="footer p-10 bg-[#18214E]  text-white">
-                {/* <aside >
-                    <img src={logo} alt="" className='w-4 h-44 e' />
-                </aside> */}
+
                 <nav >
                     <img src={logo} alt="" className='w-60 h-60' />
                 </nav>
