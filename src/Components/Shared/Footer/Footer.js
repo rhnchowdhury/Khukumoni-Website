@@ -10,9 +10,6 @@ const Footer = () => {
         <div className='mt-8'>
             <footer className="footer p-10 bg-[#18214E]  text-white">
 
-                <nav >
-                    <img src={logo} alt="" className='w-60 h-60' />
-                </nav>
                 <nav className='text-xl font-semibold ml-16 relative'>
                     <Link to='/'>Home</Link>
                     <Link to='/about'>About Us</Link>
@@ -20,6 +17,9 @@ const Footer = () => {
                     <Link>Be a Volunteer</Link>
                     <Link>News</Link>
                     <Link>Contact</Link>
+                </nav>
+                <nav >
+                    <img src={logo} alt="" className='w-60 h-60' />
                 </nav>
                 <nav className='relative flex items-end top-12 left-20'>
                     <button className='text-white text-xl font-bold py-3 px-6 footer-btn'>Donate Now</button>
