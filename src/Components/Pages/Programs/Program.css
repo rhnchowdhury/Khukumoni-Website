@@ -1,0 +1,15 @@
+.program-p {
+    font-size: 25px;
+    line-height: 30.48px;
+    /* text-align: left; */
+}
+
+.program-btn {
+    background-color: #24316B;
+    color: whitesmoke;
+}
+
+.program-btn:hover {
+    background-color: #24316B;
+    color: whitesmoke;
+}
