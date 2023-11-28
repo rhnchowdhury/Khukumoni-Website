@@ -40,7 +40,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">COVID-19 exhibits not only a health crisis in Bangladesh but also make severe food crisis among the impoverished especially in Dhaka city. The humanitarian crisis is on the going in whole, Bangladesh is also suffering from humanitarian crises due to this pandemic.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/corona'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">Khukumoni foundation believes only quality education can uplift Bangladesh toward the progress in the social and economic sectors. But it requires ensuring quality education among the children throughout the city, slum, and remote arena.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/education'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
