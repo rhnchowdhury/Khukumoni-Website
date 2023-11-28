@@ -9,6 +9,8 @@ import Education from "../../Pages/ProgramAll/Education/Education";
 import Health from "../../Pages/ProgramAll/Health/Health";
 import Skill from "../../Pages/ProgramAll/Skills/Skill";
 import Child from "../../Pages/ProgramAll/Child/Child";
+import Dress from "../../Pages/ProgramAll/Dress/Dress";
+import Stipend from "../../Pages/ProgramAll/Stipends/Stipend";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
             {
                 path: '/skill',
                 element: <Skill></Skill>
+            },
+            {
+                path: '/dress',
+                element: <Dress></Dress>
+            },
+            {
+                path: '/stipend',
+                element: <Stipend></Stipend>
             }
         ]
     }

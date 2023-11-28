@@ -110,7 +110,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">At different festivals, we offer new clothes for needy children and the elderly for 5 takas. In this attempt, they are being filled with joy and ecstasy. We want everyone on earth to be equally joyful on different festivals or religious occasions.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/dress'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">Stipends in Bangladesh play a crucial role in promoting education and alleviating poverty. The government of Bangladesh, along with various non-governmental organizations, offers stipends to students at different levels of education, particularly in primary and secondary schools.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/stipend'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
