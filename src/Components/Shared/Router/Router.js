@@ -6,6 +6,9 @@ import Program from "../../Pages/Programs/Program";
 import Food from "../../Pages/ProgramAll/Foods/Food";
 import Corona from "../../Pages/ProgramAll/Corona/Corona";
 import Education from "../../Pages/ProgramAll/Education/Education";
+import Health from "../../Pages/ProgramAll/Health/Health";
+import Skill from "../../Pages/ProgramAll/Skills/Skill";
+import Child from "../../Pages/ProgramAll/Child/Child";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +38,18 @@ const router = createBrowserRouter([
             {
                 path: '/education',
                 element: <Education></Education>
+            },
+            {
+                path: '/health',
+                element: <Health></Health>
+            },
+            {
+                path: '/child',
+                element: <Child></Child>
+            },
+            {
+                path: '/skill',
+                element: <Skill></Skill>
             }
         ]
     }

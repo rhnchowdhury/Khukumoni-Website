@@ -68,7 +68,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">We are delighted to announce that the Khukumoni foundation take initiative to start free medical health camping to the betterment of the underprivileged community. Our health camps also make sure that people are taking healthcare at the right time and seeing the doctor earlier enough before falling in a critical situation.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/health'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">Sponsoring a child in Bangladesh is a life-changing opportunity to make a positive impact. By offering your support, you provide a child with access to education, healthcare, nutrition, and a brighter future.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/child'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">Skill development is the process of identifying your skill gaps, and Development and sharpening these skills. It is important because your skills determine your ability to execute your plans with success.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/skill'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
