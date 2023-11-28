@@ -12,6 +12,8 @@ import Child from "../../Pages/ProgramAll/Child/Child";
 import Dress from "../../Pages/ProgramAll/Dress/Dress";
 import Stipend from "../../Pages/ProgramAll/Stipends/Stipend";
 import Clean from "../../Pages/ProgramAll/Cleans/Clean";
+import Clothe from "../../Pages/ProgramAll/Clothes/Clothe";
+import Relief from "../../Pages/ProgramAll/Reliefs/Relief";
 
 const router = createBrowserRouter([
     {
@@ -65,6 +67,14 @@ const router = createBrowserRouter([
             {
                 path: '/clean',
                 element: <Clean></Clean>
+            },
+            {
+                path: '/clothe',
+                element: <Clothe></Clothe>
+            },
+            {
+                path: '/relief',
+                element: <Relief></Relief>
             }
         ]
     }

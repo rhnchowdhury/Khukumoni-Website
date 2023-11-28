@@ -152,7 +152,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">During the winter we donate winter clothing, blankets, sweaters, sheets, etc. To the poor people who do not have winter clothing.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/clothe'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">Khukumoni undertakes a relief distribution program and arranges medical camps every year among flood victims of our country.Because of the geographical situation, natural calamities occur several times in different places of Bangladesh.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/relief'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
