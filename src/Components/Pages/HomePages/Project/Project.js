@@ -4,6 +4,7 @@ import img2 from '../../../../assets/home-imgs/project-img2.png';
 import img3 from '../../../../assets/home-imgs/project-img3.png';
 import imgBg from '../../../../assets/logos/frame-3.svg';
 import Event from '../Events/Event';
+import { Link } from 'react-router-dom';
 
 const Project = () => {
     return (
@@ -14,7 +15,7 @@ const Project = () => {
             <div className='grid grid-cols-2 gap-5 mx-32 -mt-[1360px] '>
                 <div className="card w-[500px] h-[350px] rounded-3xl bg-[#24316B]">
                     <div className="card-body top-96">
-                        <h2 className="card-title text-8xl text-center font-extrabold text-white">Our  Projects</h2>
+                        <h2 className="card-title text-8xl text-center font-extrabold text-white">Our Projects</h2>
                     </div>
                 </div>
                 <div className="card w-[500px]">
@@ -42,9 +43,10 @@ const Project = () => {
                     </div>
                 </div>
                 <div className="card w-[500px]  rounded-3xl bg-[#24316B] ">
-                    <div className="card-body mt-24">
-                        <h2 className="card-title text-8xl text-center font-extrabold text-white ml-5">More...</h2>
-                    </div>
+                    <Link to='/program'>
+                        <div className="card-body mt-24">
+                            <h2 className="card-title text-8xl text-center font-extrabold text-white ml-5">More...</h2>
+                        </div></Link>
                 </div>
             </div>
             <Event></Event>

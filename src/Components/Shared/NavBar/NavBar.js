@@ -29,8 +29,8 @@ const NavBar = () => {
                 <div className='relative'>
                     <img src={logo} alt="khukumoni" className='w-[500px]' />
                 </div>
-                <div>
-                    <div className='absolute ml-44'>
+                <div className=''>
+                    <div className='ml-60 absolute '>
                         <button className="nav-btn-style px-3 py-1">Sign Up</button>
                         <button className="nav-btn-style ml-4 px-4 py-1 ">Log In</button>
                     </div>
