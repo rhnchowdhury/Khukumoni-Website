@@ -11,6 +11,7 @@ import img9 from '../../../assets/program/prog-img9.png';
 import img10 from '../../../assets/program/prog-img10.png';
 import img11 from '../../../assets/program/prog-img11.png';
 import './Program.css';
+import { Link } from 'react-router-dom';
 
 const Program = () => {
     return (
@@ -18,21 +19,21 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row ">
                     <div>
-                        <h1 className='text-3xl font-bold'>Food For All</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Food For All</h1>
                         <img src={img1} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='ml-20'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">Khukumoni foundation designed the food for all programs only for poor and unprivileged people throughout Bangladesh to remove their distress and food crisis. Since 2016 we have been providing food for the poor and helpless people, which is distributed in exchange for only One Taka.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/food'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div>
-                        <h1 className='text-3xl font-bold'>Corona Pandemic</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Corona Pandemic</h1>
                         <img src={img2} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='mr-20'>
@@ -46,7 +47,7 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row">
                     <div>
-                        <h1 className='text-3xl font-bold'>Free Education Programme</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Free Education Programme</h1>
                         <img src={img3} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='ml-20'>
@@ -60,7 +61,7 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div>
-                        <h1 className='text-3xl font-bold'>Free Health Camping</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Free Health Camping</h1>
                         <img src={img4} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='mr-20'>
@@ -74,7 +75,7 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row">
                     <div>
-                        <h1 className='text-3xl font-bold'>Sponsor a Child</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Sponsor a Child</h1>
                         <img src={img5} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='ml-20'>
@@ -88,7 +89,7 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div>
-                        <h1 className='text-3xl font-bold'>Skill Development</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Skill Development</h1>
                         <img src={img6} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='mr-20'>
@@ -102,7 +103,7 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row">
                     <div>
-                        <h1 className='text-3xl font-bold'>New Dress Giving Program</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>New Dress Giving Program</h1>
                         <img src={img7} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='ml-20'>
@@ -116,7 +117,7 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div>
-                        <h1 className='text-3xl font-bold'>Khukumoni Stipends</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Khukumoni Stipends</h1>
                         <img src={img8} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='mr-20'>
@@ -130,12 +131,12 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row">
                     <div>
-                        <h1 className='text-3xl font-bold'>Cleansing Program</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Cleansing Program</h1>
                         <img src={img9} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='ml-20'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
-                        <p className="py-6 program-p">COVID-19 exhibits not only a health crisis in Bangladesh but also make severe food crisis among the impoverished especially in Dhaka city. The humanitarian crisis is on the going in whole, Bangladesh is also suffering from humanitarian crises due to this pandemic.
+                        <p className="py-6 program-p">We train slum children on how to keep themselves neat and clean for better lives. Cleaning is the precondition for becoming healthy and lead better lives. Our mentors and volunteers of all time have emphasized on the necessity of cleanliness among these uncared street children.
                         </p>
                         <button className="btn program-btn">See Details</button>
                     </div>
@@ -144,12 +145,12 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div>
-                        <h1 className='text-3xl font-bold'>Warm Clothes For Poor People</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Warm Clothes For Poor People</h1>
                         <img src={img10} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='mr-20'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
-                        <p className="py-6 program-p">COVID-19 exhibits not only a health crisis in Bangladesh but also make severe food crisis among the impoverished especially in Dhaka city. The humanitarian crisis is on the going in whole, Bangladesh is also suffering from humanitarian crises due to this pandemic.
+                        <p className="py-6 program-p">During the winter we donate winter clothing, blankets, sweaters, sheets, etc. To the poor people who do not have winter clothing.
                         </p>
                         <button className="btn program-btn">See Details</button>
                     </div>
@@ -158,12 +159,12 @@ const Program = () => {
             <div className="border-2 mx-20">
                 <div className="hero-content flex-col lg:flex-row">
                     <div>
-                        <h1 className='text-3xl font-bold'>Giving Relief To Flood victims</h1>
+                        <h1 className='text-3xl text-[#24316B] font-bold'>Giving Relief To Flood victims</h1>
                         <img src={img11} alt='' className="max-w-xs rounded-lg mt-6" />
                     </div>
                     <div className='ml-20'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
-                        <p className="py-6 program-p">COVID-19 exhibits not only a health crisis in Bangladesh but also make severe food crisis among the impoverished especially in Dhaka city. The humanitarian crisis is on the going in whole, Bangladesh is also suffering from humanitarian crises due to this pandemic.
+                        <p className="py-6 program-p">Khukumoni undertakes a relief distribution program and arranges medical camps every year among flood victims of our country.Because of the geographical situation, natural calamities occur several times in different places of Bangladesh.
                         </p>
                         <button className="btn program-btn">See Details</button>
                     </div>

@@ -3,7 +3,7 @@ import img1 from '../../../../assets/home-imgs/project-img1.png';
 import img2 from '../../../../assets/home-imgs/project-img2.png';
 import img3 from '../../../../assets/home-imgs/project-img3.png';
 import imgBg from '../../../../assets/logos/frame-3.svg';
-import Event from '../../HomePages/Events/Event';
+import Event from '../Events/Event';
 
 const Project = () => {
     return (
