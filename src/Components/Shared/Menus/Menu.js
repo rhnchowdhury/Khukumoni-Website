@@ -4,7 +4,7 @@ import './Menu.css';
 
 const Menu = () => {
     return (
-        <div className='mt-12 z-50'>
+        <div className='mt-12 relative z-50'>
             <div className="menu bg-[#253E88] ">
                 <div className='space-x-20 font-bold text-xl text-white relative ml-10'>
                     <Link to='/'>Home</Link>

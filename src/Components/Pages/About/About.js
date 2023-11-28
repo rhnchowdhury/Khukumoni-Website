@@ -21,11 +21,8 @@ const About = () => {
                 <br />  <br />
                 <div className='ml-8'>
                     <li><span className='about-span'>Education: </span>  We believe that education is the key to unlocking one's full potential. We work tirelessly to provide quality education and educational resources to children and adults in disadvantaged areas, ensuring that they have the tools to build a better future.</li>
-
                     <li><span className='about-span'>Healthcare: </span> Good health is a fundamental human right. We strive to improve access to healthcare services, promote health awareness, and provide medical assistance to those in need.</li>
-
                     <li><span className='about-span'>Community Development: </span> We actively engage with communities to understand their unique challenges and work collaboratively to develop sustainable solutions that uplift their standard of living.</li>
-
                     <li><span className='about-span'> Empowerment: </span> We are committed to empowering individuals to take control of their own lives. We offer skill-building programs, vocational training, and support for income-generating activities.</li>
                 </div>
                 <br /> <br />
