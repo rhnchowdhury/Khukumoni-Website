@@ -8,10 +8,10 @@ const Education = () => {
             <div className=" mx-20">
                 <div className="hero-content flex-col lg:flex-row ">
                     <div>
-                        <h1 className='text-5xl font-bold text-[#24316B]'>Corona Pandemic</h1>
+                        <h1 className='text-5xl font-bold text-[#24316B]'>Free Education Programme</h1>
                         <img src={img1} alt='' className="max-w-xl rounded-lg mt-8" />
                     </div>
-                    <div className='ml-12 mt-32'>
+                    <div className='ml-12 mt-20'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 education-p">Khukumoni foundation believes only quality education can uplift Bangladesh toward the progress in the social and economic sectors. But it requires ensuring quality education among the children throughout the city, slum, and remote arena. Since Bangladesh is a poor country that's why a large portion of children could not get proper education due to poverty. Khukumoni foundation took the initiative to provide free education by our volunteers to the children who are dropping out of school or are not able to continue study due to family crisis.
                         </p>

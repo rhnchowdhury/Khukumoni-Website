@@ -11,7 +11,7 @@ const Dress = () => {
                         <h1 className='text-5xl font-bold text-[#24316B]'>New Dress giving program</h1>
                         <img src={img1} alt='' className="max-w-xl rounded-lg mt-8" />
                     </div>
-                    <div className='ml-12 mt-32'>
+                    <div className='ml-12 '>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 dress-p">Khukumoni foundation runs a micro project named new dress giving among the underprivileged and orphan children across the country. At different festivals, we offer new clothes for needy children and the elderly for 5 takas. In this attempt, they are being filled with joy and ecstasy. We want everyone on earth to be equally joyful on different festivals or religious occasions.
                         </p>

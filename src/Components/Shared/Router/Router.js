@@ -11,6 +11,7 @@ import Skill from "../../Pages/ProgramAll/Skills/Skill";
 import Child from "../../Pages/ProgramAll/Child/Child";
 import Dress from "../../Pages/ProgramAll/Dress/Dress";
 import Stipend from "../../Pages/ProgramAll/Stipends/Stipend";
+import Clean from "../../Pages/ProgramAll/Cleans/Clean";
 
 const router = createBrowserRouter([
     {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
             {
                 path: '/stipend',
                 element: <Stipend></Stipend>
+            },
+            {
+                path: '/clean',
+                element: <Clean></Clean>
             }
         ]
     }

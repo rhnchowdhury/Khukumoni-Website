@@ -138,7 +138,7 @@ const Program = () => {
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 program-p">We train slum children on how to keep themselves neat and clean for better lives. Cleaning is the precondition for becoming healthy and lead better lives. Our mentors and volunteers of all time have emphasized on the necessity of cleanliness among these uncared street children.
                         </p>
-                        <button className="btn program-btn">See Details</button>
+                        <Link to='/clean'><button className="btn program-btn">See Details</button></Link>
                     </div>
                 </div>
             </div>

@@ -8,10 +8,10 @@ const Child = () => {
             <div className=" mx-20">
                 <div className="hero-content flex-col lg:flex-row ">
                     <div>
-                        <h1 className='text-5xl font-bold text-[#24316B]'>Skill Development</h1>
+                        <h1 className='text-5xl font-bold text-[#24316B]'>Sponsor a Child</h1>
                         <img src={img1} alt='' className="max-w-xl rounded-lg mt-8" />
                     </div>
-                    <div className='ml-12 mt-32'>
+                    <div className='ml-12 mt-16'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 child-p">Sponsoring a child in Bangladesh is a life-changing opportunity to make a positive impact. By offering your support, you provide a child with access to education, healthcare, nutrition, and a brighter future. Your sponsorship helps break the cycle of poverty, giving them hope and the chance to reach their full potential. Together, we can create a world where every child in Bangladesh has the opportunity to thrive and build a better tomorrow. Your sponsorship doesn't just change one life; it has a ripple effect that transforms families and communities for generations to come.
                         </p>
