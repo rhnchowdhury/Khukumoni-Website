@@ -1,15 +1,15 @@
 import React from 'react';
-import './Footer.css';
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/footer/khukumoni-white-logo.svg';
 import img1 from '../../../assets/footer/footer-img1.png';
 import img2 from '../../../assets/footer/footer-img2.png';
 import bgImg1 from '../../../assets/logos/frame-6.svg';
 import bgImg2 from '../../../assets/logos/frame-7.svg';
 import bgImg3 from '../../../assets/logos/frame-8.svg';
-import { Link } from 'react-router-dom';
 import { BsFacebook, BsInstagram, BsPinterest } from 'react-icons/bs';
 import { FaMapMarkerAlt, FaTwitter } from 'react-icons/fa';
 import { GoMail } from "react-icons/go";
+import './Footer.css';
 
 const Footer = () => {
     return (
