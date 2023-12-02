@@ -4,6 +4,7 @@ import img2 from '../../../../assets/home-imgs/events-img2.png';
 import img3 from '../../../../assets/home-imgs/events-img3.png';
 import './Event.css';
 import Gallery from '../Gallery/Gallery';
+import Team from '../Teams/Team';
 
 const Event = () => {
     return (
@@ -34,6 +35,7 @@ const Event = () => {
                     </div>
                 </div>
             </div>
+            <Team></Team>
             <Gallery></Gallery>
         </div>
     );
