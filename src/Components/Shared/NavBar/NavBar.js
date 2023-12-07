@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import logo from '../../../assets/logos/head-logo.png';
 import Menu from '../Menus/Menu';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -32,7 +33,7 @@ const NavBar = () => {
                 <div className=''>
                     <div className='ml-60 absolute '>
                         <button className="nav-btn-style px-3 py-1">Sign Up</button>
-                        <button className="nav-btn-style ml-4 px-4 py-1 ">Log In</button>
+                        <Link to='/login'><button className="nav-btn-style ml-4 px-4 py-1 ">Log In</button></Link>
                     </div>
                 </div>
             </div>

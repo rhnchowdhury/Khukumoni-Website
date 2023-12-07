@@ -14,6 +14,7 @@ import Stipend from "../../Pages/ProgramAll/Stipends/Stipend";
 import Clean from "../../Pages/ProgramAll/Cleans/Clean";
 import Clothe from "../../Pages/ProgramAll/Clothes/Clothe";
 import Relief from "../../Pages/ProgramAll/Reliefs/Relief";
+import Login from "../../Pages/Logins/Login";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: '/program',
                 element: <Program></Program>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
             },
             {
                 path: '/food',
