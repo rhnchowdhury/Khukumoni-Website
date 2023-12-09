@@ -10,7 +10,7 @@ const Menu = () => {
                     <Link to='/'>Home</Link>
                     <Link to='/about'>About Us</Link>
                     <Link to='/program'>Our Program</Link>
-                    <Link>Be a Volunteer</Link>
+                    <Link to='/volunteer'>Be a Volunteer</Link>
                     <Link>News</Link>
                     <Link>Team</Link>
                     <Link>Contact</Link>
