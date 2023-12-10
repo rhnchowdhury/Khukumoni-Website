@@ -1,6 +1,7 @@
 import React from 'react';
 import volunteerBg from '../../../assets/volunteers/volunteer-bg.png';
 import img1 from '../../../assets/volunteers/volun-img1.png';
+import img2 from '../../../assets/volunteers/volun-img2.png';
 import './Volunteer.css';
 
 const Volunteer = () => {
@@ -30,6 +31,20 @@ const Volunteer = () => {
                 </div>
                 <div className="card-actions ">
                     <button className="volunteer-btn">CALL +880 1755 744 312</button>
+                </div>
+            </div>
+            <div className=" mx-16 mt-16">
+                <div className="hero-content flex-col lg:flex-row">
+                    <div>
+                        <img src={img2} alt='' className="max-w-xl " />
+                    </div>
+                    <div className='ml-8'>
+                        <h1 className="text-4xl text-[#24316B] font-bold">More People More impact</h1>
+                        <br />
+                        <p className="py-6 corona-p">COVID-19 exhibits not only a health crisis in Bangladesh but also make severe food crisis among the impoverished especially in Dhaka city. The humanitarian crisis is on the going in whole, Bangladesh is also suffering from humanitarian crises due to this pandemic.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
