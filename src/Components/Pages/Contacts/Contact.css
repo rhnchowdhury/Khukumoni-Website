@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
 
-.contact-p {
+.contact-h1 {
     font-family: 'Sue Ellen Francisco', cursive;
     font-size: 35px;
     font-weight: 400;
@@ -10,9 +10,14 @@
     color: #FF6D6D;
 }
 
+.contact-p {
+    font-size: 25px;
+    line-height: 30.48px;
+}
+
 .contact-submit-btn {
     color: white;
-    background-color: #2E4049;
+    background-color: #253E88;
     font-size: 15px;
     font-weight: 700;
     padding: 15px 40px;
