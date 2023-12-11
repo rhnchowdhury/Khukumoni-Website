@@ -13,7 +13,7 @@ const Menu = () => {
                     <Link to='/volunteer'>Be a Volunteer</Link>
                     <Link>News</Link>
                     <Link>Team</Link>
-                    <Link>Contact</Link>
+                    <Link to='/contact'>Contact</Link>
                     <Link className=' nav-donate-btn py-5 px-8 bg-[#24316B] z-50'>Donate Now</Link>
                 </div>
             </div>

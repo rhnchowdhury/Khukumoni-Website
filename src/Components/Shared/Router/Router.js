@@ -16,6 +16,7 @@ import Clothe from "../../Pages/ProgramAll/Clothes/Clothe";
 import Relief from "../../Pages/ProgramAll/Reliefs/Relief";
 import Login from "../../Pages/Logins/Login";
 import Volunteer from "../../Pages/Volunteers/Volunteer";
+import Contact from "../../Pages/Contacts/Contact";
 
 const router = createBrowserRouter([
     {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
             {
                 path: '/volunteer',
                 element: <Volunteer></Volunteer>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
             }
         ]
     }
