@@ -31,7 +31,7 @@ const NavBar = () => {
                     <img src={logo} alt="khukumoni" className='w-[500px]' />
                 </div>
                 <div className=''>
-                    <div className='ml-60 absolute '>
+                    <div className='ml-[165px] absolute '>
                         <button className="nav-btn-style px-3 py-1">Sign Up</button>
                         <Link to='/login'><button className="nav-btn-style ml-4 px-4 py-1 ">Log In</button></Link>
                     </div>

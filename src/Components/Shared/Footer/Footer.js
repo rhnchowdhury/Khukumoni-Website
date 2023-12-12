@@ -66,7 +66,7 @@ const Footer = () => {
                         <BsPinterest className='nav-icon'></BsPinterest>
                     </div>
                 </div>
-                <div className="absolute top-[28px] left-[1058px] w-[281px] h-[322px] overflow-hidden">
+                <div className="absolute top-[28px] left-[950px] w-[281px] h-[322px] overflow-hidden">
                     <img src={img2} alt="" className="absolute h-[60%] w-[40%] top-[18%] right-[45.11%] bottom-[3.14%] left-[5.6%] max-w-full overflow-hidden max-h-full object-cover" />
                     <img src={img1} alt="" className="absolute h-[70%] w-[45%] top-[7.15%] right-[4.02%] bottom-[2.26%] left-[36.82%] max-w-full overflow-hidden max-h-full object-cover" />
                 </div>
