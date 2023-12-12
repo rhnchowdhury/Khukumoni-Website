@@ -8,9 +8,9 @@ const Story = () => {
         <div className='mt-20 mx-20'>
             <div>
                 <h2 className='story-h2 my-5'>Our Story</h2>
-                <div className='flex'>
+                <div className='flex justify-center items-center'>
                     <div>
-                        <div className=' '>
+                        <div className=''>
                             <h1 className='story-h1'>Khukumoni Foundation</h1>
                             <p className='story-p mt-5'><span className='story-span'>Khukumoni Foundations</span> destination is empower unprivileged children and youth societies in moral, social, institutional and practical education and voluntary work for the benefit of socio-economic development in Bangladesh.
                                 <br />
@@ -26,13 +26,14 @@ const Story = () => {
                     </div>
                     <div>
                         <div>
-                            <div className=' mt-[380px]'>
-                                {/* relative */}
-                                <img src={bgImg} alt="" className='w-full h-full' />
+                            <div className=''>
+                                {/* relative mt-[380px]*/}
+                                <img src={bgImg} alt="" className='' />
                                 {/* w-[1900px] h-[500px] */}
                             </div>
-                            <div className='absolute -mt-96'>
-                                <img src={img1} alt="" className='' />
+                            <div className=' '>
+                                {/* absolute -mt-96*/}
+                                <img src={img1} alt="" className='w-full h-full' />
                             </div>
                         </div>
                     </div>

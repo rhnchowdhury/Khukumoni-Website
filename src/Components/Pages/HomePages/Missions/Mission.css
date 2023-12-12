@@ -1,5 +1,6 @@
 .mission-h1 {
-    font-size: 68px;
+    font-size: 50px;
+    /* font-size: 68px; */
     font-weight: 700;
     line-height: 1.1;
 }
@@ -25,7 +26,8 @@
 }
 
 .mission-p {
-    font-size: 25px;
+    font-size: 22px;
+    /* font-size: 25px; */
     line-height: 31px;
     text-align: left;
 }

@@ -12,12 +12,14 @@
 }
 
 .story-p {
-    font-size: 25px;
+    font-size: 22px;
+    /* font-size: 25px; */
     line-height: 30.48px;
     text-align: left;
 }
 
 .story-span {
-    font-size: 27px;
+    font-size: 25px;
+    /* font-size: 27px; */
     font-weight: 700;
 }
