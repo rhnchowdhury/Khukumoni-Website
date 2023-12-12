@@ -45,7 +45,7 @@ const Mission = () => {
             </div>
             <div className='flex -z-50'>
                 <div className=' '>
-                    <img src={imgBg3} alt="" className='mt-60 relative w-[900px] mission-bg-img ml-32 ' />
+                    <img src={imgBg3} alt="" className='mt-60 relative w-[900px] mission-bg-img ml-28 ' />
                     <div className='-mt-[600px] absolute'>
                         <img src={img3} alt="" className='w-80 ml-56' />
                     </div>
@@ -63,7 +63,7 @@ const Mission = () => {
                     </div>
                 </div>
             </div>
-            <div className='-mt-[500px] z-20 absolute'>
+            <div className='-mt-[500px] w-[700px] z-20 absolute'>
                 <div>
                     <img src={imgBg4} alt="" />
                 </div>
