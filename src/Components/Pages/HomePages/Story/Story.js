@@ -5,11 +5,11 @@ import './Story.css';
 
 const Story = () => {
     return (
-        <div className='mt-20 mx-20'>
-            <div>
+        <div className='mt-20 '>
+            <div className='mx-20'>
                 <h2 className='story-h2 my-5'>Our Story</h2>
-                <div className='flex justify-center items-center'>
-                    <div>
+                <div className='flex'>
+                    <div className='w-[1600px]'>
                         <div className=''>
                             <h1 className='story-h1'>Khukumoni Foundation</h1>
                             <p className='story-p mt-5'><span className='story-span'>Khukumoni Foundations</span> destination is empower unprivileged children and youth societies in moral, social, institutional and practical education and voluntary work for the benefit of socio-economic development in Bangladesh.
@@ -26,22 +26,18 @@ const Story = () => {
                     </div>
                     <div>
                         <div>
-                            <div className=''>
-                                {/* relative mt-[380px]*/}
-                                <img src={bgImg} alt="" className='' />
-                                {/* w-[1900px] h-[500px] */}
+                            <div className='mt-[450px] w-96'>
+                                <img src={bgImg} alt="" className='ml-20' />
                             </div>
-                            <div className=' '>
-                                {/* absolute -mt-96*/}
-                                <img src={img1} alt="" className='w-full h-full' />
+                            <div className='absolute -mt-[470px] w-96'>
+                                <img src={img1} alt="" className='ml-16' />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='bg-[#24316B] w-full h-12 relative -mt-12'></div>
+            <div className='bg-[#24316B] w-full h-12 relative -mt-6'></div>
         </div>
-
     );
 };
 
