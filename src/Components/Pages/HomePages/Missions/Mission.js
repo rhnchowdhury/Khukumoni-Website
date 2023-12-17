@@ -17,13 +17,13 @@ const Mission = () => {
             </div>
             <div className='-mt-[800px] mx-16'>
                 <div className='ml-12 grid grid-cols-2 gap-20'>
-                    <div className="card rounded-[50px]  bg-[#253E88] text-white shadow-xl">
+                    <div className="card rounded-[50px] bg-[#253E88] text-white shadow-xl">
                         <div className="card-body">
                             <div className='flex'>
                                 <img src={img1} alt="" className='w-52 -mt-28 -ml-10 absolute' />
                                 <h2 className="relative mission-h1 ml-48">Our  Mission</h2>
                             </div>
-                            <p className='relative mission-p mt-10'>To make significant improvement of underprivileged people through educational program .Children in our society with nourishment and educational program against hunger around the country to protect lives, eliminate poverty through education and establish social justice.</p>
+                            <p className='relative mission-p mt-24'>To make significant improvement of underprivileged people through educational program .Children in our society with nourishment and educational program against hunger around the country to protect lives, eliminate poverty through education and establish social justice.</p>
                             <div className="card-actions justify-end">
                                 <button className="mission-btn">Learn More</button>
                             </div>
@@ -35,7 +35,7 @@ const Mission = () => {
                                 <img src={img2} alt="" className='w-52 -mt-28 -ml-10 absolute' />
                                 <h2 className="relative mission-h1 ml-52">Our  Vision</h2>
                             </div>
-                            <p className='relative mission-p mt-10'>We are working to build a country free of illiteracy, hunger, poverty and make people realize their rights to become respected citizens.</p>
+                            <p className='relative mission-p mt-24'>We are working to build a country free of illiteracy, hunger, poverty and make people realize their rights to become respected citizens.</p>
                             <div className="card-actions justify-end">
                                 <button className="mission-btn">Learn More</button>
                             </div>

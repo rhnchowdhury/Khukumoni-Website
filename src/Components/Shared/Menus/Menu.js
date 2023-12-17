@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Menu.css';
 
 const Menu = () => {
+
     return (
         <div className='mt-12 relative z-50'>
             <div className="menu bg-[#253E88] ">
