@@ -9,7 +9,7 @@ const Login = () => {
                     <form >
                         {/* onSubmit={handleSubmit(handleLogin)} */}
                         <div>
-                            <h1 className='text-[#F8AD51] text-3xl font-bold'>Login to your account</h1>
+                            <h1 className='text-white text-3xl font-bold'>Login to your account</h1>
                             {/* <label className="label"><span className="label-text font-bold" style={{ color: "#675444" }}>Name</span></label>
                             <input type='text'
                                  {...register("name",
@@ -20,7 +20,7 @@ const Login = () => {
                             {errors.name && <p className='text-error'>{errors.name?.message}</p>} */}
                         </div>
                         <div className='mt-5'>
-                            <label className="label"><span className="label-text font-bold text-[#F8AD51]">Account No.</span></label>
+                            <label className="label"><span className="label-text font-bold text-white">Account No.</span></label>
                             <input type='text'
                                 //  {...register("email",
                                 // {
@@ -30,7 +30,7 @@ const Login = () => {
                             {/* {errors.email && <p className='text-error'>{errors.email?.message}</p>} */}
                         </div>
                         <div>
-                            <label className="label"><span className="label-text font-bold text-[#F8AD51]">Password</span></label>
+                            <label className="label"><span className="label-text font-bold text-white">Password</span></label>
                             <input type='password'
                                 // {...register("password",
                                 // {
@@ -40,7 +40,7 @@ const Login = () => {
                                 // })}
                                 className="input input-bordered w-full max-w-xs" />
                             {/* {errors.password && <p className='text-error'>{errors.password?.message}</p>} */}
-                            <label className="label"><span className="label-text font-semibold text-[#F8AD51]">Forget password?</span></label>
+                            <label className="label"><span className="label-text font-semibold text-white">Forget password?</span></label>
                         </div>
                         <input className='btn w-full max-w-xs' style={{ background: "#F8AD51" }} value='Login' type="submit" />
                         {/* {loginError && <p className='text-error'>{loginError}</p>} */}
