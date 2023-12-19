@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar bg-[#4268B1] relative">
+            <div className="navbar hidden lg:flex bg-[#4268B1] relative">
+                {/* hidden lg:flex */}
                 <div className="navbar-start ml-8">
                     <p className='text-white flex'><span className='mt-1 mr-2'><BsFillTelephoneFill></BsFillTelephoneFill></span> +88 01755744312</p>
                 </div>
