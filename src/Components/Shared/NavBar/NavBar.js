@@ -1,7 +1,7 @@
 import React from 'react';
-import { BsFacebook, BsFillTelephoneFill, BsInstagram, BsPinterest } from "react-icons/bs";
-import { IoMailSharp } from "react-icons/io5";
-import { FaTwitter } from "react-icons/fa";
+import { BsFacebook, BsFillTelephoneFill, BsInstagram } from "react-icons/bs";
+import { IoLogoYoutube, IoMailSharp } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
 import logo from '../../../assets/logos/head-logo.png';
 import Menu from '../Menus/Menu';
 import './NavBar.css';
@@ -22,8 +22,8 @@ const NavBar = () => {
                     <button className="flex text-white space-x-5 bg-[#24316B] absolute py-[22px] px-5">
                         <BsInstagram className='nav-icon'></BsInstagram>
                         <BsFacebook className='nav-icon'></BsFacebook>
-                        <FaTwitter className='nav-icon'></FaTwitter>
-                        <BsPinterest className='nav-icon'></BsPinterest>
+                        <IoLogoYoutube className='nav-icon' />
+                        <FaLinkedin className='nav-icon'></FaLinkedin>
                     </button>
                 </div>
             </div>

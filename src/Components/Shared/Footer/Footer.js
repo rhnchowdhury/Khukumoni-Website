@@ -6,10 +6,11 @@ import img2 from '../../../assets/footer/footer-img2.png';
 import bgImg1 from '../../../assets/logos/frame-6.svg';
 import bgImg2 from '../../../assets/logos/frame-7.svg';
 import bgImg3 from '../../../assets/logos/frame-8.svg';
-import { BsFacebook, BsInstagram, BsPinterest } from 'react-icons/bs';
-import { FaMapMarkerAlt, FaTwitter } from 'react-icons/fa';
+import { BsFacebook, BsInstagram } from 'react-icons/bs';
+import { FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 import { GoMail } from "react-icons/go";
 import './Footer.css';
+import { IoLogoYoutube } from 'react-icons/io5';
 
 const Footer = () => {
     return (
@@ -62,8 +63,8 @@ const Footer = () => {
                     <div className="h-[18.11px] flex flex-row items-center justify-end gap-[17px]">
                         <BsInstagram className='nav-icon'></BsInstagram>
                         <BsFacebook className='nav-icon'></BsFacebook>
-                        <FaTwitter className='nav-icon'></FaTwitter>
-                        <BsPinterest className='nav-icon'></BsPinterest>
+                        <IoLogoYoutube className='nav-icon' />
+                        <FaLinkedin className='nav-icon'></FaLinkedin>
                     </div>
                 </div>
                 <div className="absolute top-[28px] left-[950px] w-[281px] h-[322px] overflow-hidden">
