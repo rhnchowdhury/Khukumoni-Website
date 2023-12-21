@@ -8,9 +8,9 @@ import bgImg2 from '../../../assets/logos/frame-7.svg';
 import bgImg3 from '../../../assets/logos/frame-8.svg';
 import { BsFacebook, BsInstagram } from 'react-icons/bs';
 import { FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
+import { IoLogoYoutube } from 'react-icons/io5';
 import { GoMail } from "react-icons/go";
 import './Footer.css';
-import { IoLogoYoutube } from 'react-icons/io5';
 
 const Footer = () => {
     return (
