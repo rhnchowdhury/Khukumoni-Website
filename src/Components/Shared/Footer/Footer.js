@@ -62,9 +62,10 @@ const Footer = () => {
                 <div className="absolute w-[17.01%] right-[0%] bottom-[0px] left-[82.99%] bg-[#24316B] h-[60px] flex flex-col items-end justify-center py-[27px] px-[38px] box-border">
                     <div className="h-[18.11px] flex flex-row items-center justify-end gap-[17px]">
                         <BsInstagram className='nav-icon'></BsInstagram>
-                        <BsFacebook className='nav-icon'></BsFacebook>
-                        <IoLogoYoutube className='nav-icon' />
-                        <FaLinkedin className='nav-icon'></FaLinkedin>
+
+                        <a href="https://www.facebook.com/khukumonifoundation" target="_blank" rel="noreferrer noopener"><BsFacebook className='nav-icon'></BsFacebook></a>
+                        <a href="https://www.youtube.com/@KhukumoniFoundation-kc1uq" target="_blank" rel="noreferrer noopener"><IoLogoYoutube className='nav-icon' /></a>
+                        <a href="https://www.linkedin.com/in/khukumoni-foundation-21041a192/" target="_blank" rel="noreferrer noopener"><FaLinkedin className='nav-icon'></FaLinkedin></a>
                     </div>
                 </div>
                 <div className="absolute top-[28px] left-[950px] w-[281px] h-[322px] overflow-hidden">

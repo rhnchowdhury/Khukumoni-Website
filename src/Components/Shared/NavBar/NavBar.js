@@ -21,9 +21,9 @@ const NavBar = () => {
                 <div className="navbar-end mr-8 ">
                     <button className="flex text-white space-x-5 bg-[#24316B] absolute py-[22px] px-5">
                         <BsInstagram className='nav-icon'></BsInstagram>
-                        <BsFacebook className='nav-icon'></BsFacebook>
-                        <IoLogoYoutube className='nav-icon' />
-                        <FaLinkedin className='nav-icon'></FaLinkedin>
+                        <a href="https://www.facebook.com/khukumonifoundation" target="_blank" rel="noreferrer noopener"><BsFacebook className='nav-icon'></BsFacebook></a>
+                        <a href="https://www.youtube.com/@KhukumoniFoundation-kc1uq" target="_blank" rel="noreferrer noopener"><IoLogoYoutube className='nav-icon' /></a>
+                        <a href="https://www.linkedin.com/in/khukumoni-foundation-21041a192/" target="_blank" rel="noreferrer noopener"><FaLinkedin className='nav-icon'></FaLinkedin></a>
                     </button>
                 </div>
             </div>
