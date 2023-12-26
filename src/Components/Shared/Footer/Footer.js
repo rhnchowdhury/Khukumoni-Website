@@ -54,13 +54,14 @@ const Footer = () => {
                 </div>
                 <img src={bgImg1} alt="" className="absolute h-[94.63%] w-[41.17%] top-[0%] right-[-3.05%] bottom-[15.37%] left-[61.88%] max-w-full overflow-hidden max-h-full opacity-[0.35]" />
                 <div className="absolute h-[68.71%] w-[25.97%] top-[18.14%] right-[66.18%] bottom-[18.14%] left-[1.85%] text-lg">
-                    <b className="absolute top-[0%] left-[31.82%]">Home</b>
-                    <b className="absolute top-[13.35%] left-[31.82%]">About Us</b>
-                    <b className="absolute top-[25.69%] left-[31.82%]">Our Program</b>
-                    <b className="absolute top-[37.04%] left-[31.82%]">Be a Volunteer</b>
-                    <b className="absolute top-[49.39%] left-[31.82%]">News</b>
-                    <b className="absolute top-[60.39%] left-[31.82%]">Team</b>
-                    <b className="absolute top-[71.68%] left-[31.82%]">Contact</b>
+                    <Link to='/'><b className="absolute top-[0%] left-[31.82%]">Home</b></Link>
+                    <Link to='/about'><b className="absolute top-[13.35%] left-[31.82%]">About Us</b></Link>
+                    <Link to='/program'><b className="absolute top-[25.69%] left-[31.82%]">Our Program</b></Link>
+                    <Link to='/volunteer'><b className="absolute top-[37.04%] left-[31.82%]">Be a Volunteer</b></Link>
+                    <Link to='/news'><b className="absolute top-[49.39%] left-[31.82%]">News</b></Link>
+                    <Link><b className="absolute top-[60.39%] left-[31.82%]">Team</b></Link>
+                    <Link to='/contact'><b className="absolute top-[71.68%] left-[31.82%]">Contact</b></Link>
+                    {/* <b className="absolute top-[71.68%] left-[31.82%]">Contact</b> */}
                 </div>
                 <img src={logo} alt="" className="absolute top-[50px] left-[523px] w-[150px] h-[160px] overflow-hidden" />
                 <div className="absolute w-[17.01%] right-[0%] bottom-[0px] left-[82.99%] bg-[#24316B] h-[60px] flex flex-col items-end justify-center py-[27px] px-[38px] box-border">
@@ -77,7 +78,7 @@ const Footer = () => {
                 </div>
                 <div className="absolute top-[270px] left-[950px] w-[250px]  text-[20px]">
                     <div className="absolute   rounded-xl bg-[#24316B] box-border w-[253px] h-[60px] border-[4px] border-solid border-[#6286C4] " />
-                    <Link><b className="absolute top-[18px] left-[65px]">Donate Now</b></Link>
+                    <Link to='/donate'><b className="absolute top-[18px] left-[65px]">Donate Now</b></Link>
                 </div>
                 <img src={bgImg3} alt="" className="absolute top-[0px] left-[0px] w-[88px] h-[80px] overflow-hidden opacity-[0.35]" />
                 <img src={bgImg2} alt="" className="absolute bottom-[0px] left-[0px] w-[198px] h-[50px] overflow-hidden opacity-[0.32]" />
