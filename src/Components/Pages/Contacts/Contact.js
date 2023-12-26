@@ -1,8 +1,8 @@
 import React from 'react';
 import { AiOutlineMail } from "react-icons/ai";
-import { IoCallOutline } from "react-icons/io5";
-import { BsFacebook, BsInstagram, BsPinterest } from 'react-icons/bs';
-import { FaTwitter } from 'react-icons/fa';
+import { IoCallOutline, IoLogoYoutube } from "react-icons/io5";
+import { BsFacebook, BsInstagram } from 'react-icons/bs';
+import { FaLinkedin } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -42,10 +42,10 @@ const Contact = () => {
                         </div>
                         <div className="mt-5">
                             <button className="flex space-x-5">
-                                <BsInstagram className='text-2xl text-[#FF6D6D]'></BsInstagram>
-                                <BsFacebook className='text-2xl text-[#FF6D6D]'></BsFacebook>
-                                <FaTwitter className='text-2xl text-[#FF6D6D]'></FaTwitter>
-                                <BsPinterest className='text-2xl text-[#FF6D6D]'></BsPinterest>
+                                <a href="https://www.instagram.com/khukumonifoundation" target="_blank" rel="noreferrer noopener"><BsInstagram className='text-3xl text-[#FF6D6D]'></BsInstagram></a>
+                                <a href="https://www.facebook.com/khukumonifoundation" target="_blank" rel="noreferrer noopener"><BsFacebook className='text-3xl text-[#FF6D6D]'></BsFacebook></a>
+                                <a href="https://www.youtube.com/@KhukumoniFoundation-kc1uq" target="_blank" rel="noreferrer noopener"><IoLogoYoutube className='text-3xl text-[#FF6D6D]' /></a>
+                                <a href="https://www.linkedin.com/in/khukumoni-foundation-21041a192/" target="_blank" rel="noreferrer noopener"><FaLinkedin className='text-3xl text-[#FF6D6D]'></FaLinkedin></a>
                             </button>
                         </div>
                     </div>
