@@ -17,7 +17,6 @@ import Relief from "../../Pages/ProgramAll/Reliefs/Relief";
 import Login from "../../Pages/Logins/Login";
 import Volunteer from "../../Pages/Volunteers/Volunteer";
 import Contact from "../../Pages/Contacts/Contact";
-import News from "../../Pages/HomePages/News/News";
 import Blog from "../../Pages/Blogs/Blog";
 
 const router = createBrowserRouter([
