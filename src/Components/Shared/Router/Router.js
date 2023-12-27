@@ -19,6 +19,8 @@ import Volunteer from "../../Pages/Volunteers/Volunteer";
 import Contact from "../../Pages/Contacts/Contact";
 import Blog from "../../Pages/Blogs/Blog";
 import Donate from "../../Pages/Donation/Donate";
+import DashboardLayout from "./DashboardLayout";
+import Dashboard from "../../Pages/Dashboard/Test/Check";
 
 const router = createBrowserRouter([
     {
@@ -101,6 +103,17 @@ const router = createBrowserRouter([
                 path: '/donate',
                 element: <Donate></Donate>
             }
+        ]
+    },
+    {
+        path: '/dashboard',
+        element: <DashboardLayout></DashboardLayout>,
+        children: [
+            {
+                path: '/dashboard/test',
+                element: <Dashboard></Dashboard>
+            }
+
         ]
     }
 

@@ -4,7 +4,7 @@ import img1 from '../../../assets/logos/ssl-img.jpg';
 const Donate = () => {
     return (
         <section className='m-5 lg:m-10 p-5 lg:py-2 '>
-            <div className='flex justify-center items-center my-10 '>
+            <div className='flex justify-center items-center my-8 '>
                 <div className='bg-[#253E88] p-10 rounded-xl'>
                     <form >
                         <div>
@@ -12,7 +12,7 @@ const Donate = () => {
                             <p className='text-white mt-4'>How much would you like to donate?</p>
                         </div>
                         <div className='mt-5 flex'>
-                            <input type="radio" name="radio-1" className=" radio-white" />
+                            <input type="radio" name="radio-1" className="" />
                             <p className='text-white ml-1'>BDT 1000</p>
                         </div>
                         <div className='mt-2 flex'>
@@ -20,7 +20,7 @@ const Donate = () => {
                             <p className='text-white ml-1'>BDT 1500</p>
                         </div>
                         <div className='mt-2 flex'>
-                            <input type="radio" name="radio-1" className=" radio-white" />
+                            <input type="radio" name="radio-1" className="" />
                             <p className='text-white ml-1'>BDT 2000</p>
                         </div>
                         <div className='mt-2 flex'>
