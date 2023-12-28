@@ -20,7 +20,10 @@ import Contact from "../../Pages/Contacts/Contact";
 import Blog from "../../Pages/Blogs/Blog";
 import Donate from "../../Pages/Donation/Donate";
 import DashboardLayout from "./DashboardLayout";
-import Dashboard from "../../Pages/Dashboard/Test/Check";
+import Details from "../../Pages/Dashboard/Details/Details";
+import Message from "../../Pages/Dashboard/Messages/Message";
+import NewDonar from "../../Pages/Dashboard/NewDonar/NewDonar";
+import Profile from "../../Pages/Dashboard/MyProfile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -109,9 +112,25 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <DashboardLayout></DashboardLayout>,
         children: [
+            // {
+            //     path: '/dashboard',
+            //     element: <Dashboard></Dashboard>
+            // },
             {
-                path: '/dashboard/test',
-                element: <Dashboard></Dashboard>
+                path: '/dashboard/detail',
+                element: <Details></Details>
+            },
+            {
+                path: '/dashboard/sms',
+                element: <Message></Message>
+            },
+            {
+                path: '/dashboard/donar',
+                element: <NewDonar></NewDonar>
+            },
+            {
+                path: '/dashboard/profile',
+                element: <Profile></Profile>
             }
 
         ]
