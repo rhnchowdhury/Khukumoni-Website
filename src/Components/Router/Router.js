@@ -1,29 +1,31 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../../Layouts/Mains/Main";
-import Home from "../../Layouts/Homes/Home";
-import About from "../../Pages/About/About";
-import Program from "../../Pages/Programs/Program";
-import Food from "../../Pages/ProgramAll/Foods/Food";
-import Corona from "../../Pages/ProgramAll/Corona/Corona";
-import Education from "../../Pages/ProgramAll/Education/Education";
-import Health from "../../Pages/ProgramAll/Health/Health";
-import Skill from "../../Pages/ProgramAll/Skills/Skill";
-import Child from "../../Pages/ProgramAll/Child/Child";
-import Dress from "../../Pages/ProgramAll/Dress/Dress";
-import Stipend from "../../Pages/ProgramAll/Stipends/Stipend";
-import Clean from "../../Pages/ProgramAll/Cleans/Clean";
-import Clothe from "../../Pages/ProgramAll/Clothes/Clothe";
-import Relief from "../../Pages/ProgramAll/Reliefs/Relief";
-import Login from "../../Pages/Logins/Login";
-import Volunteer from "../../Pages/Volunteers/Volunteer";
-import Contact from "../../Pages/Contacts/Contact";
-import Blog from "../../Pages/Blogs/Blog";
-import Donate from "../../Pages/Donation/Donate";
+import Main from "../Layouts/Mains/Main";
+import Home from "../Layouts/Homes/Home";
+import About from "../Pages/About/About";
+import Program from "../Pages/Programs/Program";
+import Food from "../Pages/ProgramAll/Foods/Food";
+import Corona from "../Pages/ProgramAll/Corona/Corona";
+import Education from "../Pages/ProgramAll/Education/Education";
+import Health from "../Pages/ProgramAll/Health/Health";
+import Skill from "../Pages/ProgramAll/Skills/Skill";
+import Child from "../Pages/ProgramAll/Child/Child";
+import Dress from "../Pages/ProgramAll/Dress/Dress";
+import Stipend from "../Pages/ProgramAll/Stipends/Stipend";
+import Clean from "../Pages/ProgramAll/Cleans/Clean";
+import Clothe from "../Pages/ProgramAll/Clothes/Clothe";
+import Relief from "../Pages/ProgramAll/Reliefs/Relief";
+import Login from "../Registers/Logins/Login";
+import Volunteer from "../Pages/Volunteers/Volunteer";
+import Contact from "../Pages/Contacts/Contact";
+import Blog from "../Pages/Blogs/Blog";
+import Donate from "../Pages/Donation/Donate";
 import DashboardLayout from "./DashboardLayout";
-import Details from "../../Pages/Dashboard/Details/Details";
-import Message from "../../Pages/Dashboard/Messages/Message";
-import NewDonar from "../../Pages/Dashboard/NewDonar/NewDonar";
-import Profile from "../../Pages/Dashboard/MyProfile/Profile";
+import Details from "../Pages/Dashboard/Details/Details";
+import Message from "../Pages/Dashboard/Messages/Message";
+import NewDonar from "../Pages/Dashboard/NewDonar/NewDonar";
+import Profile from "../Pages/Dashboard/MyProfile/Profile";
+import SignIn from "../Registers/SignUp/SignIn";
+
 
 const router = createBrowserRouter([
     {
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: '/program',
                 element: <Program></Program>
+            },
+            {
+                path: '/signin',
+                element: <SignIn></SignIn>
             },
             {
                 path: '/login',

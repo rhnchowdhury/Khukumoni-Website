@@ -3,7 +3,7 @@ import React from 'react';
 // import { Link, Outlet } from 'react-router-dom';
 // import NavBar from '../NavBar/NavBar';
 // import img1 from '../../../assets/logos/head-logo.png';
-import DashHeader from '../../Pages/Dashboard/DashHeader/DashHeader';
+import DashHeader from '../Pages/Dashboard/DashHeader/DashHeader';
 import { Link, Outlet } from 'react-router-dom';
 
 const DashboardLayout = () => {

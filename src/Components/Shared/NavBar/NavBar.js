@@ -35,7 +35,8 @@ const NavBar = () => {
                 </div>
                 <div className=''>
                     <div className='ml-[165px] absolute '>
-                        <button className="nav-btn-style px-3 py-1">Sign Up</button>
+
+                        <Link to='/signin'><button className="nav-btn-style px-3 py-1">Sign Up</button></Link>
                         <Link to='/login'><button className="nav-btn-style ml-4 px-4 py-1 ">Log In</button></Link>
                     </div>
                 </div>
