@@ -42,9 +42,9 @@ const Login = () => {
                             {/* {errors.password && <p className='text-error'>{errors.password?.message}</p>} */}
                             <label className="label"><span className="label-text font-semibold text-white">Forget password?</span></label>
                         </div>
-                        <input className='btn w-full max-w-xs bg-[#F8AD51] border-[#F8AD51]' value='Login' type="submit" />
+                        <input className='btn w-full max-w-xs text-white bg-[#4268B1] border-[#4268B1] hover:bg-[#253E88]' value='Login' type="submit" />
                         {/* {loginError && <p className='text-error'>{loginError}</p>} */}
-                        <p className='text-white font-medium mt-2'>New to Khukumoni? <Link to='/signup' className='text-[#F8AD51] font-bold'>Create an account</Link></p>
+                        <p className='text-white font-medium mt-2'>New to Khukumoni? <Link to='/signin' className='text-[#F8AD51] font-bold'>Create an account</Link></p>
                     </form>
                     {/* <div className="divider">OR</div> */}
                     {/* <div className='card-actions justify-center'>

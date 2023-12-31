@@ -47,6 +47,7 @@ const Donate = () => {
                             <select className="select select-bordered w-full mt-4">
                                 <option disabled selected>--Select a Donation Type--</option>
                                 <option>One Time Donation</option>
+                                <option>Donate for flood victims</option>
                                 <option>Food For All</option>
                                 <option>Zakat for Education</option>
                                 <option>Donation for Street Hawker</option>

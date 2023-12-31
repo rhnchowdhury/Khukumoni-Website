@@ -25,6 +25,8 @@ import Message from "../Pages/Dashboard/Messages/Message";
 import NewDonar from "../Pages/Dashboard/NewDonar/NewDonar";
 import Profile from "../Pages/Dashboard/MyProfile/Profile";
 import SignIn from "../Registers/SignUp/SignIn";
+import Setting from "../Pages/Dashboard/Settings/Setting";
+import VolunteerInfo from "../Pages/Dashboard/Volunteers/VolunteerInfo";
 
 
 const router = createBrowserRouter([
@@ -123,7 +125,7 @@ const router = createBrowserRouter([
             //     element: <Dashboard></Dashboard>
             // },
             {
-                path: '/dashboard/detail',
+                path: '/dashboard',
                 element: <Details></Details>
             },
             {
@@ -137,6 +139,14 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/profile',
                 element: <Profile></Profile>
+            },
+            {
+                path: '/dashboard/setting',
+                element: <Setting></Setting>
+            },
+            {
+                path: '/dashboard/volunteer',
+                element: <VolunteerInfo></VolunteerInfo>
             }
 
         ]
