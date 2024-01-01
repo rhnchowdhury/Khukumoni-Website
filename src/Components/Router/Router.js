@@ -27,6 +27,7 @@ import Profile from "../Pages/Dashboard/MyProfile/Profile";
 import SignIn from "../Registers/SignUp/SignIn";
 import Setting from "../Pages/Dashboard/Settings/Setting";
 import VolunteerInfo from "../Pages/Dashboard/Volunteers/VolunteerInfo";
+import VolunteerDetail from "../Pages/Dashboard/Volunteers/VolunteerDetail";
 
 
 const router = createBrowserRouter([
@@ -147,6 +148,10 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/volunteer',
                 element: <VolunteerInfo></VolunteerInfo>
+            },
+            {
+                path: '/dashboard/volunteerInfo',
+                element: <VolunteerDetail></VolunteerDetail>
             }
 
         ]

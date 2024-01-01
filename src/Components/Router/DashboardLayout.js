@@ -5,13 +5,9 @@ import React from 'react';
 // import img1 from '../../../assets/logos/head-logo.png';
 import DashHeader from '../Pages/Dashboard/DashHeader/DashHeader';
 import { Link, Outlet } from 'react-router-dom';
-import { FaDollarSign, FaHome, FaUser, FaUserAlt, FaUserPlus, FaUsers } from 'react-icons/fa';
-import { BiMessageRounded } from "react-icons/bi";
-import { TfiMoney } from "react-icons/tfi"; import { TbMessageCircle } from "react-icons/tb";
-
-import { BsCurrencyDollar } from 'react-icons/bs';
-import { AiTwotoneMessage } from 'react-icons/ai';
-
+import { FaDollarSign, FaHome, FaUser, FaUserPlus, FaUsers } from 'react-icons/fa';
+import { PiUsersFourFill } from "react-icons/pi";
+import { TbMessageCircle } from "react-icons/tb";
 
 const DashboardLayout = () => {
     return (
@@ -58,7 +54,7 @@ const DashboardLayout = () => {
                         <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaDollarSign /></span>Donation List</Link></li>
                         <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaUsers /></span>All Donar</Link></li>
                         <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaUser /></span>User</Link></li>
-                        <li><Link to='/dashboard/volunteer' className='text-[#F7941D] font-semibold text-[15px]'><span><FaUser /></span>Volunteer</Link></li>
+                        <li><Link to='/dashboard/volunteer' className='text-[#F7941D] font-semibold text-[15px]'><span><PiUsersFourFill /></span>Volunteer</Link></li>
 
                     </ul>
 

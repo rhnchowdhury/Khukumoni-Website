@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const VolunteerInfo = () => {
     return (
@@ -51,7 +52,7 @@ const VolunteerInfo = () => {
                                 <th className='font-normal border border-slate-300'>Bhola</th>
                                 <th className='font-normal border border-slate-300'>Barishal</th>
                                 <th className='font-normal border border-slate-300'>Student</th>
-                                <th className='font-normal border border-slate-300'><button className='btn btn-xs bg-[#F7941D] text-white hover:bg-[#F7941D]'>Details</button></th>
+                                <th className='font-normal border border-slate-300'><Link to='/dashboard/volunteerInfo'><button className='btn btn-xs bg-[#F7941D] text-white hover:bg-[#F7941D]'>Details</button></Link></th>
 
                                 {/* <td><button className='btn btn-xs btn-warning'>Details</button></td> */}
                             </tr>

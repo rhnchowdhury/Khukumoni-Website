@@ -2,7 +2,7 @@ import React from 'react';
 
 const Details = () => {
     return (
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='grid grid-cols-2 gap-4 m-4'>
             <div className="card w-96 bg-base-100 shadow-xl divide-orange-400">
                 <div className="card-body divide-orange-400">
                     <h2 className="card-title text-[#F7941D] uppercase">December Month</h2>
