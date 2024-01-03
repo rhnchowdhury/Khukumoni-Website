@@ -28,6 +28,8 @@ import SignIn from "../Registers/SignUp/SignIn";
 import Setting from "../Pages/Dashboard/Settings/Setting";
 import VolunteerInfo from "../Pages/Dashboard/Volunteers/VolunteerInfo";
 import VolunteerDetail from "../Pages/Dashboard/Volunteers/VolunteerDetail";
+import AllDonar from "../Pages/Dashboard/AllDonar/AllDonar";
+import DonarInfo from "../Pages/Dashboard/AllDonar/DonarInfo";
 
 
 const router = createBrowserRouter([
@@ -134,8 +136,16 @@ const router = createBrowserRouter([
                 element: <Message></Message>
             },
             {
-                path: '/dashboard/donar',
+                path: '/dashboard/addDonar',
                 element: <NewDonar></NewDonar>
+            },
+            {
+                path: '/dashboard/donar',
+                element: <AllDonar></AllDonar>
+            },
+            {
+                path: '/dashboard/donarInfo',
+                element: <DonarInfo></DonarInfo>
             },
             {
                 path: '/dashboard/profile',

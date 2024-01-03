@@ -50,12 +50,11 @@ const DashboardLayout = () => {
                         {/* Sidebar content here */}
                         <li><Link to='/dashboard' className='text-[#F7941D] font-semibold text-[15px]'><span><FaHome /></span> Dashboard</Link></li>
                         <li><Link to='/dashboard/sms' className='text-[#F7941D] font-semibold text-[15px]'><span><TbMessageCircle /></span> Send SMS</Link></li>
-                        <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaUserPlus /></span>Add New Donar</Link></li>
-                        <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaDollarSign /></span>Donation List</Link></li>
+                        <li><Link to='/dashboard/addDonar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaUserPlus /></span>Add New Donar</Link></li>
                         <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaUsers /></span>All Donar</Link></li>
+                        <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaDollarSign /></span>Donation List</Link></li>
                         <li><Link to='/dashboard/donar' className='text-[#F7941D] font-semibold text-[15px]'><span><FaUser /></span>User</Link></li>
                         <li><Link to='/dashboard/volunteer' className='text-[#F7941D] font-semibold text-[15px]'><span><PiUsersFourFill /></span>Volunteer</Link></li>
-
                     </ul>
 
                 </div>
