@@ -4,3 +4,16 @@
     font-size: 40px;
     font-weight: 700;
 }
+
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .gallery-h2 {
+        color: #24316B;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}

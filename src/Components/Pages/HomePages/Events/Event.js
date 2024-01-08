@@ -10,7 +10,7 @@ const Event = () => {
     return (
         <div>
             <h2 className='event-h2 my-16'>Our Events</h2>
-            <div className='grid grid-cols-3 gap-2 mx-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 mx-8'>
                 <div className="card w-96 ">
                     <figure><img src={img1} alt="Shoes" className='relative' /></figure>
                     <div className=" absolute  bg-[#253E88] text-white mx-16 mt-[218px] py-2 rounded-t-3xl">
