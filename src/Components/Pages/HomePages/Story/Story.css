@@ -21,3 +21,30 @@
     font-size: 25px;
     font-weight: 700;
 }
+
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .story-h1 {
+        color: #24316B;
+        font-size: 35px;
+        font-weight: 600;
+        /* font-size: 55px;
+        font-weight: 700; */
+    }
+
+    .story-h2 {
+        color: #24316B;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        /* font-size: 40px;
+        font-weight: 700; */
+    }
+
+    .story-sm-responsive {
+        display: none;
+    }
+}

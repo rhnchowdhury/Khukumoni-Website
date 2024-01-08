@@ -2,11 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    const handleLogin = event => {
+        event.preventDefault();
+        const account = event.target.phone.value;
+        const password = event.target.password.value;
+        const user = { account, password };
+        console.log(user);
+        event.target.reset();
+    };
     return (
         <section className='m-5 lg:m-10 p-5 lg:py-2 '>
             <div className='flex justify-center items-center my-10 '>
                 <div className='bg-[#253E88] p-10 rounded-xl'>
-                    <form >
+                    <form onSubmit={handleLogin}>
                         {/* onSubmit={handleSubmit(handleLogin)} */}
                         <div>
                             <h1 className='text-white text-3xl font-bold'>Login to your account</h1>
@@ -21,7 +29,7 @@ const Login = () => {
                         </div>
                         <div className='mt-5'>
                             <label className="label"><span className="label-text font-bold text-white">Account No.</span></label>
-                            <input type='text'
+                            <input type='text' name='phone'
                                 //  {...register("email",
                                 // {
                                 //     required: "Email address is required"
@@ -31,7 +39,7 @@ const Login = () => {
                         </div>
                         <div>
                             <label className="label"><span className="label-text font-bold text-white">Password</span></label>
-                            <input type='password'
+                            <input type='password' name='password'
                                 // {...register("password",
                                 // {
                                 //     required: "Password is required",

@@ -43,7 +43,7 @@ const Mission = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex -z-50'>
+            <div className='lg:flex -z-50'>
                 <div className=' '>
                     <img src={imgBg3} alt="" className='mt-60 relative w-[900px] mission-bg-img ml-28 ' />
                     <div className='-mt-[600px] absolute'>

@@ -6,3 +6,13 @@
     border: 3px solid #6286C4;
     border-radius: 10px;
 }
+
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .menu-responsive {
+        display: none;
+    }
+}

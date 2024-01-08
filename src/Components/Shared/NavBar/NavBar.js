@@ -33,9 +33,8 @@ const NavBar = () => {
                 <div className='relative'>
                     <img src={logo} alt="khukumoni" className='w-[500px]' />
                 </div>
-                <div className=''>
+                <div className='nav-reg-responsive'>
                     <div className='ml-[165px] absolute '>
-
                         <Link to='/signin'><button className="nav-btn-style px-3 py-1">Sign Up</button></Link>
                         <Link to='/login'><button className="nav-btn-style ml-4 px-4 py-1 ">Log In</button></Link>
                     </div>

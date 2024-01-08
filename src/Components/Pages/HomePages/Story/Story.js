@@ -24,7 +24,7 @@ const Story = () => {
                                 In these four years of journey, we have achieved a new era, opening several branches of the school, running several projects, increasing volunteer involvement and so on. We remain a nearly all-volunteer organization that prioritizes the needs of the street child that we serve.</p>
                         </div>
                     </div>
-                    <div>
+                    <div className='story-sm-responsive'>
                         <div>
                             <div className='mt-[450px] w-96'>
                                 <img src={bgImg} alt="" className='ml-20' />

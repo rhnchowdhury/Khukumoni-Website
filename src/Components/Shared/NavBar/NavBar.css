@@ -12,3 +12,13 @@
 .nav-icon {
     font-size: 19px;
 }
+
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .nav-reg-responsive {
+        display: none;
+    }
+}

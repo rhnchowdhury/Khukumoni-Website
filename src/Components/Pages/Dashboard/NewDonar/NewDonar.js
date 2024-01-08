@@ -35,7 +35,7 @@ const NewDonar = () => {
                         </div>
 
                         <div className='mt-3'>
-                            <input className='btn  text-white bg-[#4268B1] border-[#4268B1] hover:bg-[#253E88] ' value='Submit' type="submit" />
+                            <input className='btn  text-white bg-[#F7941D] border-[#F7941D] hover:bg-[#F7941D] ' value='Submit' type="submit" />
 
                         </div>
                         {/* w-full max-w-xs */}
