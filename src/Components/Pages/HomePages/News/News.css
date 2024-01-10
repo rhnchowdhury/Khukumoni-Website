@@ -4,3 +4,30 @@
     font-size: 40px;
     font-weight: 700;
 }
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .news-h2 {
+        color: #24316B;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    /* --swiper-navigation-size */
+
+    .swiper-button-prev {
+        top: var(--swiper-navigation-top-offset, 30%) !important;
+        /* left: var(--swiper-navigation-sides-offset, 20px); */
+        /* left: -80px !important; */
+        width: calc(var(30px) / 24 * 17)
+            /* width: calc(var(20px) / 44 * 27) */
+    }
+
+
+    .swiper-button-next {
+        top: var(--swiper-navigation-top-offset, 30%) !important;
+    }
+}

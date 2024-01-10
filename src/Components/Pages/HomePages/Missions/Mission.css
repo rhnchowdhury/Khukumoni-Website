@@ -30,6 +30,12 @@
     text-align: left;
 }
 
+.mission-sec-p {
+    font-size: 22px;
+    line-height: 31px;
+    text-align: left;
+}
+
 .mission-bg-img {
     background-color: darkslateblue;
 }
@@ -41,4 +47,52 @@
     font-weight: 700;
     padding: 12px 28px;
     border-radius: 10px;
+}
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .mission-h1 {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+
+    .mission-h2 {
+        color: #24316B;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .mission-sec-h2 {
+        color: #24316B;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .mission-p {
+        font-size: 17px;
+        line-height: 31px;
+        /* text-align: left; */
+    }
+
+    .mission-sec-p {
+        margin: 0 90px;
+        margin-left: 100px;
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+
+    .mission-btn {
+        color: white;
+        background-color: #24316B;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-left: 130px;
+    }
 }

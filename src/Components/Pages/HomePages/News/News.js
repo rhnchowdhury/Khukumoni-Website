@@ -21,7 +21,7 @@ const News = () => {
                     loop={true}
                     navigation={true}
                     modules={[Navigation]}
-                    className="mySwiper mt-20"
+                    className="mySwiper mt-12 lg:mt-20"
                 >
                     <SwiperSlide>
                         <div className='flex justify-center gap-8'>
@@ -29,20 +29,20 @@ const News = () => {
                                 <video loop controls className='w-[500px] rounded-2xl'>
                                     <source src={vdo1} type='video/mp4' />
                                 </video>
-                                <h1 className='mt-4 text-center text-2xl font-bold'>Somoy TV</h1>
+                                <h1 className='mt-4 text-center text-2xl lg:font-bold font-medium'>Somoy TV</h1>
                             </div>
                             <div>
                                 <video loop controls className='w-[500px] rounded-2xl'>
                                     <source src={vdo2} type='video/mp4' />
                                 </video>
-                                <h1 className='mt-4 text-center text-2xl font-bold'>Jamuna TV</h1>
+                                <h1 className='mt-4 text-center text-2xl lg:font-bold font-medium'>Jamuna TV</h1>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='flex justify-center gap-8'>
                             <div>
-                                <video loop controls className='w-[500px] h-[285px] rounded-2xl'>
+                                <video loop controls className='w-[500px] h-[90px] lg:h-[285px] rounded-2xl'>
                                     <source src={vdo3} type='video/mp4' />
                                 </video>
                                 <h1 className='mt-4 text-center text-2xl font-bold'>Desh TV</h1>
