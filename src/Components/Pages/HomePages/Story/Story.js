@@ -5,14 +5,14 @@ import './Story.css';
 
 const Story = () => {
     return (
-        <div className='mt-20 '>
-            <div className='mx-20'>
+        <div className='lg:mt-20 mt-12'>
+            <div className='lg:mx-20'>
                 <h2 className='story-h2 my-5'>Our Story</h2>
                 <div className='flex'>
                     <div className='w-[1600px]'>
                         <div className=''>
-                            <h1 className='story-h1'>Khukumoni Foundation</h1>
-                            <p className='story-p mt-5'><span className='story-span'>Khukumoni Foundations</span> destination is empower unprivileged children and youth societies in moral, social, institutional and practical education and voluntary work for the benefit of socio-economic development in Bangladesh.
+                            <h1 className='story-h1 lx:mx-0 mx-2'>Khukumoni Foundation</h1>
+                            <p className='story-p mt-5 lx:mx-0 mx-7'><span className='story-span'>Khukumoni Foundations</span> destination is empower unprivileged children and youth societies in moral, social, institutional and practical education and voluntary work for the benefit of socio-economic development in Bangladesh.
                                 <br />
                                 <br />
                                 <span className='story-span'>Khukumoni Foundation</span> (for helpless People) is a non-profitable educational support organization in Bangladesh . We believe every child deserves a bright future in the world. <span className='story-span'>Khukumoni Foundation</span> works for the development of children from socially and economically disadvantaged background of the country through creating the educational and social values.

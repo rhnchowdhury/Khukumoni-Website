@@ -10,8 +10,8 @@ const Event = () => {
     return (
         <div>
             <h2 className='event-h2 my-16'>Our Events</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 mx-8'>
-                <div className="card w-96 ">
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 lg:mx-8'>
+                <div className="card lg:w-96">
                     <figure><img src={img1} alt="Shoes" className='relative' /></figure>
                     <div className=" absolute  bg-[#253E88] text-white mx-16 mt-[218px] py-2 rounded-t-3xl">
                         <h2 className="text-center text-xl font-bold">Khukumoni School</h2>
@@ -21,10 +21,10 @@ const Event = () => {
                             the elderly for 5 taka.</p>
                     </div>
                 </div>
-                <div className="card w-96">
+                <div className="card lg:w-96">
                     <figure><img src={img2} alt="Shoes" className='relative' /></figure>
                 </div>
-                <div className="card w-96">
+                <div className="card lg:w-96">
                     <figure><img src={img3} alt="Shoes" className='relative' /></figure>
                     <div className=" absolute  bg-[#253E88] text-white mx-16 mt-[218px] py-2 rounded-t-3xl">
                         <h2 className="text-center text-xl font-bold">Khukumoni School</h2>

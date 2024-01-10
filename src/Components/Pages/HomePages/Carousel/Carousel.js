@@ -31,19 +31,19 @@ const Carousel = () => {
                 className="mySwiper z-[-0]"
             >
                 <SwiperSlide>
-                    <img src={img1} alt="" className='w-full h-[548px]' />
+                    <img src={img1} alt="" className='w-full lg:h-[548px] h-[200px]' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img2} alt="" className='w-full h-[548px]' />
+                    <img src={img2} alt="" className='w-full lg:h-[548px] h-[200px]' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img3} alt="" className='w-full h-[548px]' />
+                    <img src={img3} alt="" className='w-full lg:h-[548px] h-[200px]' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img4} alt="" className='w-full h-[548px]' />
+                    <img src={img4} alt="" className='w-full lg:h-[548px] h-[200px]' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img5} alt="" className='w-full h-[548px]' />
+                    <img src={img5} alt="" className='w-full lg:h-[548px] h-[200px]' />
                 </SwiperSlide>
             </Swiper>
         </>

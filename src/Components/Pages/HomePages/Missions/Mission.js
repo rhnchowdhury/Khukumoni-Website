@@ -10,8 +10,8 @@ import './Mission.css';
 
 const Mission = () => {
     return (
-        <div className='mt-12'>
-            <h2 className='mission-h2 '>Mission & Vision</h2>
+        <div className='lg:mt-12'>
+            <h2 className='mission-h2 my-5'>Mission & Vision</h2>
             <div className='relative '>
                 <img src={imgBg} alt="" className='opacity-50 -z-[1000]' />
             </div>
@@ -53,12 +53,15 @@ const Mission = () => {
                 <div>
                     <div className='relative -z-40'>
                         <img src={imgBg2} alt="" className='lg:w-[1400px]' />
+                        {/* relative w-[900px] */}
                         <div className=' lg:-mt-[450px] -mt-[95px] absolute lg:ml-72 lg:mr-6'>
+                            {/* -mt-[395px] */}
                             <h2 className='mission-sec-h2 -mt-96'>Khukumoni <br /> School</h2>
-                            <p className='mission-sec-p lg:mt-8 mt-5 text-[#24316B]'>Free Primary School Education for underprivileged children, where we teach more than 5 hundred children in our 5 school branches around the Dhaka city. Location of schools are given below:
+                            {/* -mt-16 */}
+                            <p className='mission-sec-p lg:mt-8 mt-5 text-[#24316B] '>Free Primary School Education for underprivileged children, where we teach more than 5 hundred children in our 5 school branches around the Dhaka city. Location of schools are given below:
                                 <br /> a) Karwan Bazar Railway Slum(beside Tejgaon Truck Stand) <br /> b) Nandipara Lane no 1, Bashabo. <br /> c) Italy Market, Sonir Akhra. <br /> d) Road 12/A, Dhanmondi Lakeshore. <br /> e) Launch Terminal, Sadarghat.
                             </p>
-                            <button className="mission-btn lg:mt-8 mt-2">Learn More</button>
+                            <button className="mission-btn lg:mt-8 mt-2 lg:ml-0 ml-32">Learn More</button>
                         </div>
                     </div>
                 </div>
