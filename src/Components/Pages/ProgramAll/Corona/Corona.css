@@ -2,3 +2,25 @@
     font-size: 25px;
     line-height: 30.48px;
 }
+
+.corona-sec-p {
+    font-size: 25px;
+    line-height: 30.48px;
+}
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .corona-p {
+        margin: 0 15px;
+        font-size: 20px;
+        line-height: 30.48px;
+    }
+
+    .corona-sec-p {
+        margin: 15px 26px;
+        font-size: 20px;
+        line-height: 30.48px;
+    }
+}

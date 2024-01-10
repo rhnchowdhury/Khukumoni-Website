@@ -21,6 +21,7 @@ const News = () => {
                     loop={true}
                     navigation={true}
                     modules={[Navigation]}
+
                     className="mySwiper mt-12 lg:mt-20"
                 >
                     <SwiperSlide>

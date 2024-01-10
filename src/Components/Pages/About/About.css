@@ -1,11 +1,11 @@
 .about-p {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30.48px;
     text-align: left;
 }
 
 .about-span {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -14,4 +14,17 @@
     text-align: center;
     font-size: 40px;
     font-weight: 700;
+}
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+
+    .about-h2 {
+        color: #24316B;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
 }

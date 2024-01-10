@@ -17,7 +17,7 @@ const Gallery = () => {
                 <div className="card rounded-none lg:w-96">
                     <figure><img src={img1} alt="" className='' /></figure>
                 </div>
-                <div className="card rounded-none lg:w-56 lg:h-[400px] lg:ml-4">
+                <div className="card rounded-none lg:w-56  lg:h-[400px] lg:ml-4">
                     <figure><img src={img2} alt="" className='' /></figure>
                 </div>
                 <div className="card lg:-ml-[126px] rounded-none">
