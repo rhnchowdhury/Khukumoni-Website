@@ -17,7 +17,7 @@ const Login = () => {
                     <form onSubmit={handleLogin}>
                         {/* onSubmit={handleSubmit(handleLogin)} */}
                         <div>
-                            <h1 className='text-white text-3xl font-bold'>Login to your account</h1>
+                            <h1 className='text-white lg:text-3xl text-xl lg:font-bold font-extrabold'>Login to your account</h1>
                             {/* <label className="label"><span className="label-text font-bold" style={{ color: "#675444" }}>Name</span></label>
                             <input type='text'
                                  {...register("name",
@@ -28,7 +28,7 @@ const Login = () => {
                             {errors.name && <p className='text-error'>{errors.name?.message}</p>} */}
                         </div>
                         <div className='mt-5'>
-                            <label className="label"><span className="label-text font-bold text-white">Account No.</span></label>
+                            <label className="label"><span className="label-text lg:font-bold font-semibold text-white">Account No.</span></label>
                             <input type='text' name='phone'
                                 //  {...register("email",
                                 // {
@@ -38,7 +38,7 @@ const Login = () => {
                             {/* {errors.email && <p className='text-error'>{errors.email?.message}</p>} */}
                         </div>
                         <div>
-                            <label className="label"><span className="label-text font-bold text-white">Password</span></label>
+                            <label className="label"><span className="label-text lg:font-bold font-semibold text-white">Password</span></label>
                             <input type='password' name='password'
                                 // {...register("password",
                                 // {
@@ -48,11 +48,11 @@ const Login = () => {
                                 // })}
                                 className="input input-bordered w-full max-w-xs" />
                             {/* {errors.password && <p className='text-error'>{errors.password?.message}</p>} */}
-                            <label className="label"><span className="label-text font-semibold text-white">Forget password?</span></label>
+                            <label className="label"><span className="label-text lg:font-semibold text-white">Forget password?</span></label>
                         </div>
                         <input className='btn w-full max-w-xs text-white bg-[#4268B1] border-[#4268B1] hover:bg-[#253E88]' value='Login' type="submit" />
                         {/* {loginError && <p className='text-error'>{loginError}</p>} */}
-                        <p className='text-white font-medium mt-2'>New to Khukumoni? <Link to='/signin' className='text-[#F8AD51] font-bold'>Create an account</Link></p>
+                        <p className='text-white lg:font-medium mt-2'>New to Khukumoni? <Link to='/signin' className='text-[#F8AD51] lg:font-bold font-semibold'>Create an account</Link></p>
                     </form>
                     {/* <div className="divider">OR</div> */}
                     {/* <div className='card-actions justify-center'>

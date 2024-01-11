@@ -28,7 +28,7 @@ const SignIn = () => {
                     <form onSubmit={handleSignIn}>
                         {/* onSubmit={handleSubmit(handleLogin)} */}
                         <div>
-                            <h1 className='text-white text-3xl font-bold'>Create your account</h1>
+                            <h1 className='text-white lg:text-3xl text-xl lg:font-bold font-extrabold'>Create your account</h1>
                         </div>
                         <div className='mt-5'>
                             <input type='text' placeholder='Your Name' name='name' className="input input-bordered w-full max-w-xs" required />
@@ -45,7 +45,7 @@ const SignIn = () => {
                         <div className='mt-2'>
                             <input className='btn w-full max-w-xs text-white bg-[#4268B1] border-[#4268B1] hover:bg-[#253E88] ' value='Sign Up' type="submit" />
                         </div>
-                        <p className='text-white font-medium mt-2'>Already have an account ? <Link to='/login' className='text-[#F8AD51] font-bold'>Please Login</Link></p>
+                        <p className='text-white font-medium mt-2'>Already have an account ? <Link to='/login' className='text-[#F8AD51] lg:font-bold'>Please Login</Link></p>
                     </form>
                 </div>
             </div>
