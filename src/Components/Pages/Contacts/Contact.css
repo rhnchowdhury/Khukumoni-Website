@@ -29,6 +29,25 @@
     font-size: 50px;
 }
 
-/* .nav-icon {
-    font-size: 19px;
-} */
+
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .contact-h1 {
+        font-family: 'Sue Ellen Francisco', cursive;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FF6D6D;
+    }
+
+    .contact-p {
+        font-size: 20px;
+        line-height: 30.48px;
+        text-align: left;
+    }
+}
