@@ -4,21 +4,21 @@ import './Skill.css';
 
 const Skill = () => {
     return (
-        <div className='my-8'>
-            <div className=" mx-20">
+        <div className='lg:my-8 my-5'>
+            <div className="lg:mx-20">
                 <div className="hero-content flex-col lg:flex-row ">
                     <div>
-                        <h1 className='text-5xl font-bold text-[#24316B]'>Skill Development</h1>
-                        <img src={img1} alt='' className="max-w-xl rounded-lg mt-8" />
+                        <h1 className='lg:text-5xl text-4xl font-bold text-[#24316B]'>Skill Development</h1>
+                        <img src={img1} alt='' className="lg:max-w-xl w-96 rounded-lg mt-8" />
                     </div>
-                    <div className='ml-12 mt-32'>
+                    <div className='lg:ml-12 lg:mt-32 mt-4'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 skill-p">Skill development is the process of identifying your skill gaps, and Development and sharpening these skills. It is important because your skills determine your ability to execute your plans with success. The scope and complexity of change that comes adjacent to today’s technological revolution are unlike anything we’ve seen before. This technological revolution requires new skill sets, and regrettably, people have not advanced at the same speed as technology. We work for all types of skill development such as IT, Mechanical, Electrical technology, Mobile servicing, automobile parts servicing, House maker, Hotel management services, etc.
                         </p>
                     </div>
                 </div>
-                <h1 className="text-2xl text-[#24316B] font-bold">Description</h1>
-                <p className='skill-p mt-4'>The main objective of Khukumoni foundations medical camp is to provide free introductory care to people in life-threatening diseases which reveal the unusual strengths and goals of medical principles. Our medical camps are supervised by health professionals and our volunteers to carry out a limited health cautions amongst the underprivileged people.
+                <h1 className="ml-4 lg:ml-0 text-2xl text-[#24316B] font-bold">Description</h1>
+                <p className='skill-sec-p mt-4'>The main objective of Khukumoni foundations medical camp is to provide free introductory care to people in life-threatening diseases which reveal the unusual strengths and goals of medical principles. Our medical camps are supervised by health professionals and our volunteers to carry out a limited health cautions amongst the underprivileged people.
 
                     The needy community from different regions follow these camps to get free check-up and treatment as well as information regarding good health. Getting the relevant health checkup is important for everyone and while considering it, some important aspects like age, lifestyle, family background, and risks are taken into account on measuring the COVID-19 situation.
 

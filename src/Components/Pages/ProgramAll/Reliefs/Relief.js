@@ -4,21 +4,21 @@ import './Relief.css';
 
 const Relief = () => {
     return (
-        <div className='my-8'>
-            <div className=" mx-20">
+        <div className='lg:my-8 my-5'>
+            <div className="lg:mx-20">
                 <div className="hero-content flex-col lg:flex-row ">
                     <div>
-                        <h1 className='text-5xl font-bold text-[#24316B]'>Giving Relief To Flood victims</h1>
-                        <img src={img1} alt='' className="max-w-xl rounded-lg mt-8" />
+                        <h1 className='lg:text-5xl text-4xl font-bold text-[#24316B]'>Giving Relief To Flood victims</h1>
+                        <img src={img1} alt='' className="lg:max-w-xl w-96 rounded-lg mt-8" />
                     </div>
-                    <div className='ml-12'>
+                    <div className='lg:ml-12 lg:mt-32 mt-4'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 relief-p">Khukumoni undertakes a relief distribution program and arranges medical camps every year among flood victims of our country.Because of the geographical situation, natural calamities occur several times in different places of Bangladesh. As a result, some regions become severely damaged. Victims become needy even homeless.Khukumoni foundation is collecting funds to reach the flood-affected areas with relief in the shortest time.You can also be a part of us by donating the basis of your financial ability and willingness.
                         </p>
                     </div>
                 </div>
-                <h1 className="text-2xl text-[#24316B] font-bold">Description</h1>
-                <p className='relief-p mt-4'>You will be glad to know that Khukumoni Foundation is collecting emergency funds to help the victims at flood-affected areas with essential remedy and reliefs.
+                <h1 className="ml-4 lg:ml-0 text-2xl text-[#24316B] font-bold">Description</h1>
+                <p className='relief-sec-p mt-4'>You will be glad to know that Khukumoni Foundation is collecting emergency funds to help the victims at flood-affected areas with essential remedy and reliefs.
 
                     In our country, flood hits almost every year. Furthermore, we know that Bangladesh is well known for being one of the most exposed climate prone countries as natural calamities like floods, cyclones, etc. Consistently, In this year flood is becoming more devastating and lengthened. Among the people, some of them are a very needy community of different districts become the worst victims.
 

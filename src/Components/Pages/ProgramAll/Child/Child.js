@@ -4,21 +4,21 @@ import './Child.css';
 
 const Child = () => {
     return (
-        <div className='my-8'>
-            <div className=" mx-20">
+        <div className='lg:my-8 my-5'>
+            <div className="lg:mx-20">
                 <div className="hero-content flex-col lg:flex-row ">
                     <div>
-                        <h1 className='text-5xl font-bold text-[#24316B]'>Sponsor a Child</h1>
-                        <img src={img1} alt='' className="max-w-xl rounded-lg mt-8" />
+                        <h1 className='lg:text-5xl text-4xl font-bold text-[#24316B]'>Sponsor a Child</h1>
+                        <img src={img1} alt='' className="lg:max-w-xl w-96 rounded-lg mt-8" />
                     </div>
-                    <div className='ml-12 mt-16'>
+                    <div className='lg:ml-12 lg:mt-32 mt-4'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 child-p">Sponsoring a child in Bangladesh is a life-changing opportunity to make a positive impact. By offering your support, you provide a child with access to education, healthcare, nutrition, and a brighter future. Your sponsorship helps break the cycle of poverty, giving them hope and the chance to reach their full potential. Together, we can create a world where every child in Bangladesh has the opportunity to thrive and build a better tomorrow. Your sponsorship doesn't just change one life; it has a ripple effect that transforms families and communities for generations to come.
                         </p>
                     </div>
                 </div>
-                <h1 className="text-2xl text-[#24316B] font-bold">Description</h1>
-                <p className='child-p mt-4'>The main objective of Khukumoni foundations medical camp is to provide free introductory care to people in life-threatening diseases which reveal the unusual strengths and goals of medical principles. Our medical camps are supervised by health professionals and our volunteers to carry out a limited health cautions amongst the underprivileged people.
+                <h1 className="ml-4 lg:ml-0 text-2xl text-[#24316B] font-bold">Description</h1>
+                <p className='child-sec-p mt-4'>The main objective of Khukumoni foundations medical camp is to provide free introductory care to people in life-threatening diseases which reveal the unusual strengths and goals of medical principles. Our medical camps are supervised by health professionals and our volunteers to carry out a limited health cautions amongst the underprivileged people.
 
                     The needy community from different regions follow these camps to get free check-up and treatment as well as information regarding good health. Getting the relevant health checkup is important for everyone and while considering it, some important aspects like age, lifestyle, family background, and risks are taken into account on measuring the COVID-19 situation.
 

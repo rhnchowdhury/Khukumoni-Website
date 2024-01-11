@@ -2,3 +2,25 @@
     font-size: 25px;
     line-height: 30.48px;
 }
+
+.stipend-sec-p {
+    font-size: 25px;
+    line-height: 30.48px;
+}
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .stipend-p {
+        margin: 0 15px;
+        font-size: 20px;
+        line-height: 30.48px;
+    }
+
+    .stipend-sec-p {
+        margin: 15px 26px;
+        font-size: 20px;
+        line-height: 30.48px;
+    }
+}

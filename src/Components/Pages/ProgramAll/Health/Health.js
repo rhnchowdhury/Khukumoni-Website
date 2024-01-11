@@ -4,21 +4,21 @@ import './Health.css';
 
 const Health = () => {
     return (
-        <div className='my-8'>
-            <div className=" mx-20">
+        <div className='lg:my-8 my-5'>
+            <div className="lg:mx-20">
                 <div className="hero-content flex-col lg:flex-row ">
                     <div>
-                        <h1 className='text-5xl font-bold text-[#24316B]'>Free Health Camping</h1>
-                        <img src={img1} alt='' className="max-w-xl rounded-lg mt-8" />
+                        <h1 className='lg:text-5xl text-4xl font-bold text-[#24316B]'>Free Health Camping</h1>
+                        <img src={img1} alt='' className="lg:max-w-xl w-96 rounded-lg mt-8" />
                     </div>
-                    <div className='ml-12 mt-32'>
+                    <div className='lg:ml-12 lg:mt-32 mt-4'>
                         <h1 className="text-2xl text-[#24316B] font-bold">Project Info</h1>
                         <p className="py-6 health-p">We are delighted to announce that the Khukumoni foundation take initiative to start free medical health camping to the betterment of the underprivileged community. Free health camping is set up with a specific mission to raise awareness amongst the deprived and illiterate people of Bangladesh who have no access to basic healthcare services or knowledge about the diseases they are enduring during the pandemic and so on. Our medical camps provide free medical advice, medicine to the underprivileged people and recommend specialized treatment or surgery whenever it is needed. Our health camps also make sure that people are taking healthcare at the right time and seeing the doctor earlier enough before falling in a critical situation.
                         </p>
                     </div>
                 </div>
-                <h1 className="text-2xl text-[#24316B] font-bold">Description</h1>
-                <p className='health-p mt-4'>The main objective of Khukumoni foundations medical camp is to provide free introductory care to people in life-threatening diseases which reveal the unusual strengths and goals of medical principles. Our medical camps are supervised by health professionals and our volunteers to carry out a limited health cautions amongst the underprivileged people.
+                <h1 className="ml-4 lg:ml-0 text-2xl text-[#24316B] font-bold">Description</h1>
+                <p className='health-sec-p mt-4'>The main objective of Khukumoni foundations medical camp is to provide free introductory care to people in life-threatening diseases which reveal the unusual strengths and goals of medical principles. Our medical camps are supervised by health professionals and our volunteers to carry out a limited health cautions amongst the underprivileged people.
 
                     The needy community from different regions follow these camps to get free check-up and treatment as well as information regarding good health. Getting the relevant health checkup is important for everyone and while considering it, some important aspects like age, lifestyle, family background, and risks are taken into account on measuring the COVID-19 situation.
 
