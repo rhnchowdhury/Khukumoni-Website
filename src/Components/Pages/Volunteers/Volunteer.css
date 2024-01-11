@@ -36,3 +36,38 @@
     padding: 15px 40px;
     border-radius: 50px;
 }
+
+
+/******************************************* Responsive for Mobile device ***************************************/
+
+
+@media only screen and (max-width: 576px) {
+    .volunteer-btn {
+        color: white;
+        background-color: #2E4049;
+        font-size: 15px;
+        border-radius: 50px;
+    }
+
+    .volunteer-p {
+        font-size: 20px;
+        line-height: 30.48px;
+        text-align: left;
+    }
+
+    .number-design {
+        color: white;
+        background: #24316B;
+        padding: 5px;
+        border-radius: 100%;
+    }
+
+    .volunteer-start-btn {
+        color: white;
+        background-color: #24316B;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 15px 25px;
+        border-radius: 50px;
+    }
+}
