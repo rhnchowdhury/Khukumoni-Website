@@ -2,17 +2,46 @@
     display: flex;
 }
 
+.menu-links {
+    display: block;
+}
+
 .nav-donate-btn {
     border: 3px solid #6286C4;
     border-radius: 10px;
 }
 
+.mobile-menu {
+    display: none;
+}
 
 /******************************************* Responsive for Mobile device ***************************************/
 
 
 @media only screen and (max-width: 576px) {
-    .menu-responsive {
+
+
+    .menu-links {
         display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-links-mobile {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background: #253E88;
+        padding: 8px 15px;
+        transition: all 1.5s ease-out;
+    }
+
+    .nav-donate-btn {
+        border: 3px solid #6286C4;
+        border-radius: 10px;
     }
 }

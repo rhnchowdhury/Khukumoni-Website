@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <div>
+            <div className='lg:hidden block'>
+                {/* lg:hidden block */}
+                <Menu></Menu>
+            </div>
             <div className="navbar hidden lg:flex bg-[#4268B1] relative">
                 {/* hidden lg:flex */}
                 <div className="navbar-start ml-8">
@@ -40,7 +44,9 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <Menu></Menu>
+            <div className='lg:block hidden'>
+                <Menu></Menu>
+            </div>
         </div>
     );
 };
