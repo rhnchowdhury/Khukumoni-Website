@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Project = () => {
     return (
-        <div className='relative z-20 lg:mx-8 mx-5'>
+        <div className='relative z-20 lg:mx-8 mx-5 lg:mt-0 mt-10'>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 '>
                 <div className="card lg:w-96 lg:h-[300px] rounded-3xl bg-[#24316B]">
                     <div className="card-body lg:mt-6">

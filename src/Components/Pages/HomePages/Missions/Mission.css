@@ -76,7 +76,6 @@
     .mission-p {
         font-size: 17px;
         line-height: 31px;
-        /* text-align: left; */
     }
 
     .mission-sec-p {
@@ -92,14 +91,6 @@
         background-color: #24316B;
         font-size: 12px;
         font-weight: 500;
-        /* font-size: 12px;
-        font-weight: 500; */
         border-radius: 10px;
-        /* margin-left: 130px; */
-    }
-
-    .test {
-        max-width: 500px !important;
-        max-height: 100% !important;
     }
 }

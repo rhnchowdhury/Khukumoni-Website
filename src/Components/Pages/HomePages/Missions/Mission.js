@@ -61,7 +61,7 @@ const Mission = () => {
                             <p className='mission-sec-p lg:mt-8 mt-5 text-[#24316B] '>Free Primary School Education for underprivileged children, where we teach more than 5 hundred children in our 5 school branches around the Dhaka city. Location of schools are given below:
                                 <br /> a) Karwan Bazar Railway Slum(beside Tejgaon Truck Stand) <br /> b) Nandipara Lane no 1, Bashabo. <br /> c) Italy Market, Sonir Akhra. <br /> d) Road 12/A, Dhanmondi Lakeshore. <br /> e) Launch Terminal, Sadarghat.
                             </p>
-                            <button className="mission-btn lg:mt-8 mt-2 lg:ml-0 ml-32">Learn More</button>
+                            <button className="mission-btn lg:mt-8 mt-2 lg:ml-0 ml-32 ">Learn More</button>
                         </div>
                     </div>
                 </div>
