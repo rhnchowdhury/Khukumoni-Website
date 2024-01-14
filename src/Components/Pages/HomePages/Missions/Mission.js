@@ -11,7 +11,7 @@ import './Mission.css';
 const Mission = () => {
     return (
         <div className='lg:mt-12'>
-            <h2 className='mission-h2 my-5'>Mission & Vision</h2>
+            <h2 className='mission-h2 lg:my-0 my-5'>Mission & Vision</h2>
             <div className='relative '>
                 <img src={imgBg} alt="" className='opacity-50 -z-[1000]' />
             </div>
