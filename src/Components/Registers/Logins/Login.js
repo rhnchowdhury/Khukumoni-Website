@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    // const [user, setUser] = useState([]);
     const handleLogin = event => {
         event.preventDefault();
         const account = event.target.phone.value;
@@ -10,9 +11,18 @@ const Login = () => {
         console.log(user);
         event.target.reset();
     };
+    // useEffect(() => {
+    //     fetch('http://localhost:4000/db')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log(data)
+    //             setUser(data)
+    //         })
+    // }, [])
     return (
         <section className='m-5 lg:m-10 p-5 lg:py-2 '>
             <div className='flex justify-center items-center my-10 '>
+                {/* <h1>{user.length}</h1> */}
                 <div className='bg-[#253E88] p-10 rounded-xl'>
                     <form onSubmit={handleLogin}>
                         {/* onSubmit={handleSubmit(handleLogin)} */}

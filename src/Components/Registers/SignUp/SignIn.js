@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {
+    // const [info, setInfo] = useState('')
+    // const [em, setEm] = useState('')
 
     const handleSignIn = event => {
         event.preventDefault();
@@ -13,13 +15,17 @@ const SignIn = () => {
         event.target.reset();
         console.log(user);
 
-        fetch('http://localhost:4000/user', {
+        fetch('http://localhost:4000/sign', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(user),
         })
+        // .then(res => res.json())
+        // .then(data => {
+        //     setInfo(data.user);
+        // })
     };
     return (
         <section className='m-5 lg:m-10 p-5 lg:py-2 '>
