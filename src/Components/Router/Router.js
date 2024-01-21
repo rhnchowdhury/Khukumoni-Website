@@ -30,6 +30,7 @@ import VolunteerInfo from "../Pages/Dashboard/Volunteers/VolunteerInfo";
 import VolunteerDetail from "../Pages/Dashboard/Volunteers/VolunteerDetail";
 import AllDonar from "../Pages/Dashboard/AllDonar/AllDonar";
 import DonarInfo from "../Pages/Dashboard/AllDonar/DonarInfo";
+import PrivateRoute from "./Private/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -115,7 +116,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/donate',
-                element: <Donate></Donate>
+                element: <PrivateRoute><Donate></Donate></PrivateRoute>
             }
         ]
     },

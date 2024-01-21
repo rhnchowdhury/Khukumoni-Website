@@ -1,15 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider';
 
 const Login = () => {
-    // const [user, setUser] = useState([]);
+    const { login } = useContext(AuthContext);
+    const navigate = useNavigate();
+
     const handleLogin = event => {
         event.preventDefault();
-        const account = event.target.phone.value;
+        const account = event.target.email.value;
         const password = event.target.password.value;
         const user = { account, password };
         console.log(user);
         event.target.reset();
+
+        login(account, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                navigate('/donate');
+            })
+            .then(error => {
+                console.log(error)
+            })
     };
     // useEffect(() => {
     //     fetch('http://localhost:4000/db')
@@ -39,7 +52,7 @@ const Login = () => {
                         </div>
                         <div className='mt-5'>
                             <label className="label"><span className="label-text lg:font-bold font-semibold text-white">Account No.</span></label>
-                            <input type='text' name='phone'
+                            <input type='email' name='email'
                                 //  {...register("email",
                                 // {
                                 //     required: "Email address is required"

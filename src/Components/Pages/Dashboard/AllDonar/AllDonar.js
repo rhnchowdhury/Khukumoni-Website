@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const AllDonar = () => {
+    const [donars, setDonars] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:4000/db')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setDonars(data)
+            })
+    }, [])
+
     return (
         <div className='mt-5'>
             <h2 className="card-title text-[#F7941D] text-center justify-center">Donar Information</h2>
@@ -22,6 +33,7 @@ const AllDonar = () => {
                     <table className="table w-full border-collapse border border-slate-400 ">
                         <thead>
                             <tr className='font-extrabold text-[14px] text-black'>
+                                <th className='border border-slate-300'>No.</th>
                                 <th className='border border-slate-300'>Date</th>
                                 <th className='border border-slate-300'>A/C No</th>
                                 <th className='border border-slate-300'>Donor Name</th>
@@ -32,19 +44,35 @@ const AllDonar = () => {
                                 <th className='border border-slate-300'>Action</th>
                             </tr>
                         </thead>
-                        <tbody className=' '>
-                            <tr className=''>
+                        <tbody className='border border-slate-300 '>
+
+
+                            {
+                                donars.map((donar, i) => <tr key={donar.ID}>
+                                    <td className='border border-slate-300'>{i + 1}</td>
+                                    <td className='border border-slate-300'>{donar.Date}</td>
+                                    <td className='border border-slate-300'>{donar.ID}</td>
+                                    <td className='border border-slate-300'>{donar.Name}</td>
+                                    <td className='border border-slate-300'>{donar.Address}</td>
+                                    <td className='border border-slate-300'>{donar.Email}</td>
+                                    <td className='font-normal border border-slate-300'>0.00</td>
+                                    <td className='font-normal border border-slate-300'><Link to='/dashboard/donarInfo'><button className='btn btn-xs bg-[#F7941D] text-white hover:bg-[#F7941D]'>Details</button></Link></td>
+                                </tr>
+
+                                )
+                            }
+
+
+                            {/* <tr className=''>
                                 <th className='font-normal border border-slate-300'>1-2-23</th>
                                 <th className='font-normal border border-slate-300'>100778</th>
                                 <th className='font-normal border border-slate-300'>Raihan</th>
                                 <th className='font-normal border border-slate-300'>01779983246</th>
                                 <th className='font-normal border border-slate-300'>test@gmail</th>
-                                {/* <th className='font-normal border border-slate-300'>Barishal</th> */}
+                                <th className='font-normal border border-slate-300'>Barishal</th>
                                 <th className='font-normal border border-slate-300'>00.00</th>
                                 <th className='font-normal border border-slate-300'><Link to='/dashboard/donarInfo'><button className='btn btn-xs bg-[#F7941D] text-white hover:bg-[#F7941D]'>Details</button></Link></th>
-
-                                {/* <td><button className='btn btn-xs btn-warning'>Details</button></td> */}
-                            </tr>
+                            </tr> */}
 
                         </tbody>
                     </table>

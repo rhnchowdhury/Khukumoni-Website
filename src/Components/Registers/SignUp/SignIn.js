@@ -1,9 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider';
 
 const SignIn = () => {
-    // const [info, setInfo] = useState('')
-    // const [em, setEm] = useState('')
+    const { createUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+    // const [token] = useToken(createdUserEmail);
+
+    // if (token) {
+
+    // }
 
     const handleSignIn = event => {
         event.preventDefault();
@@ -11,9 +17,18 @@ const SignIn = () => {
         const address = event.target.address.value;
         const email = event.target.email.value;
         const phone = event.target.phone.value;
-        const user = { name, address, email, phone };
+        const password = event.target.password.value;
+        const user = { name, address, email, phone, password };
         event.target.reset();
         console.log(user);
+
+        createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                navigate('/donate');
+            })
+            .catch(err => console.error(err))
 
         fetch('http://localhost:4000/sign', {
             method: 'POST',
@@ -47,6 +62,9 @@ const SignIn = () => {
                         </div>
                         <div className='mt-2'>
                             <input type='text' placeholder='Your Phone Number' name='phone' className="input input-bordered w-full max-w-xs" required />
+                        </div>
+                        <div className='mt-2'>
+                            <input type='password' placeholder='Your Password' name='password' className="input input-bordered w-full max-w-xs" required />
                         </div>
                         <div className='mt-2'>
                             <input className='btn w-full max-w-xs text-white bg-[#4268B1] border-[#4268B1] hover:bg-[#253E88] ' value='Sign Up' type="submit" />
