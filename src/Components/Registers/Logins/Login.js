@@ -1,18 +1,23 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
+// import { useForm } from 'react-hook-form';
 
 const Login = () => {
+    // const { register, formState: { errors }, handleSubmit } = useForm();
     const { login } = useContext(AuthContext);
+    // const [loginError, setLoginError] = useState('');
     const navigate = useNavigate();
 
     const handleLogin = event => {
         event.preventDefault();
+        const name = event.target.name.value;
         const account = event.target.email.value;
         const password = event.target.password.value;
-        const user = { account, password };
-        console.log(user);
+        const logUser = { name, account, password };
+        console.log(logUser);
         event.target.reset();
+        // setLoginError('');
 
         login(account, password)
             .then(result => {
@@ -22,7 +27,17 @@ const Login = () => {
             })
             .then(error => {
                 console.log(error)
+                // setLoginError(error.message)
             })
+
+
+        fetch('http://localhost:4000/login', {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(logUser),
+        })
     };
     // useEffect(() => {
     //     fetch('http://localhost:4000/db')
@@ -38,25 +53,26 @@ const Login = () => {
                 {/* <h1>{user.length}</h1> */}
                 <div className='bg-[#253E88] p-10 rounded-xl'>
                     <form onSubmit={handleLogin}>
-                        {/* onSubmit={handleSubmit(handleLogin)} */}
-                        <div>
-                            <h1 className='text-white lg:text-3xl text-xl lg:font-bold font-extrabold'>Login to your account</h1>
-                            {/* <label className="label"><span className="label-text font-bold" style={{ color: "#675444" }}>Name</span></label>
-                            <input type='text'
-                                 {...register("name",
-                                {
-                                    required: "Name is required"
-                                })} 
-                                className="input input-bordered w-full max-w-xs" />
-                            {errors.name && <p className='text-error'>{errors.name?.message}</p>} */}
-                        </div>
+                        {/* <form oonSubmit={handleSubmit(handleLogin)}> */}
+                        {/*  */}
+                        <h1 className='text-white lg:text-3xl text-xl lg:font-bold font-extrabold'>Login to your account</h1>
                         <div className='mt-5'>
+                            <label className="label"><span className="label-text lg:font-bold font-semibold text-white">Name</span></label>
+                            <input type='text' name='name'
+                                //  {...register("name",
+                                // {
+                                //     required: "Name is required"
+                                // })} 
+                                className="input input-bordered w-full max-w-xs" />
+                            {/* {errors.name && <p className='text-error'>{errors.name?.message}</p>} */}
+                        </div>
+                        <div className=''>
                             <label className="label"><span className="label-text lg:font-bold font-semibold text-white">Account No.</span></label>
                             <input type='email' name='email'
-                                //  {...register("email",
-                                // {
-                                //     required: "Email address is required"
-                                // })} 
+                                // {...register("email",
+                                //     {
+                                //         required: "Email address is required"
+                                //     })}
                                 className="input input-bordered w-full max-w-xs" />
                             {/* {errors.email && <p className='text-error'>{errors.email?.message}</p>} */}
                         </div>

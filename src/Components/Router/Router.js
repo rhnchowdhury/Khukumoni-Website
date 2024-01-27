@@ -31,6 +31,8 @@ import VolunteerDetail from "../Pages/Dashboard/Volunteers/VolunteerDetail";
 import AllDonar from "../Pages/Dashboard/AllDonar/AllDonar";
 import DonarInfo from "../Pages/Dashboard/AllDonar/DonarInfo";
 import PrivateRoute from "./Private/PrivateRoute";
+import PaymentSuccess from "../PaymentRoute/PaymentSuccess";
+import PaymentFail from "../PaymentRoute/PaymentFail";
 
 
 const router = createBrowserRouter([
@@ -117,6 +119,14 @@ const router = createBrowserRouter([
             {
                 path: '/donate',
                 element: <PrivateRoute><Donate></Donate></PrivateRoute>
+            },
+            {
+                path: `/payment/success/:tran_id`,
+                element: <PaymentSuccess></PaymentSuccess>
+            },
+            {
+                path: '/payment/fail/:tranId',
+                element: <PaymentFail></PaymentFail>
             }
         ]
     },
