@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import volunteerBg from '../../../assets/volunteers/volunteer-bg.png';
 import img1 from '../../../assets/volunteers/volun-img1.png';
 import img2 from '../../../assets/volunteers/volun-img2.png';
 import './Volunteer.css';
 
 const Volunteer = () => {
+    const [division, setDivision] = useState();
+    const [education, setEducation] = useState();
+    const [gender, setGender] = useState();
+    const [blood, setBlood] = useState();
+    const [shirt, setShirt] = useState();
+
+    const handleVolunteer = event => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const phone = event.target.phone.value;
+        const address = event.target.address.value;
+        const district = event.target.district.value;
+        const institution = event.target.institution.value;
+        const birth = event.target.birth.value;
+        const volunInfo = { name, email, phone, address, district, institution, birth, division, education, gender, blood, shirt };
+        console.log(volunInfo);
+        event.target.reset();
+    }
     return (
         <div className='mt-12'>
             <div className="hero lg:min-h-screen" style={{ backgroundImage: `url(${volunteerBg})` }}>
@@ -84,8 +103,8 @@ const Volunteer = () => {
                             <h6 className="text-3xl text-[#24316B] font-bold">Complete the Form</h6>
                             <p className="volunteer-p">Fill Form and Become <br /> Volunteer</p>
                         </div>
-                        <form className="card-body">
-                            <select className="border-2 p-3 w-full" required>
+                        <form className="card-body" onSubmit={handleVolunteer}>
+                            <select className="border-2 p-3 w-full" value={division} onChange={e => setDivision(e.target.value)} required>
                                 <option disabled selected required>Select Division</option>
                                 <option>Barishal</option>
                                 <option>Chattogram</option>
@@ -97,12 +116,12 @@ const Volunteer = () => {
                                 <option>Mymensingh</option>
                             </select>
                             <div className="form-control mt-4">
-                                <input type="text" placeholder="Your District" className="border-2 p-3" required />
+                                <input type="text" placeholder="Your District" name='district' className="border-2 p-3" required />
                             </div>
                             <div className="form-control mt-4">
-                                <input type="name" placeholder="Enter Your Name" className="border-2 p-3" required />
+                                <input type="name" placeholder="Enter Your Name" name='name' className="border-2 p-3" required />
                             </div>
-                            <select className="border-2 p-3 w-full mt-4" required>
+                            <select className="border-2 p-3 w-full mt-4" value={education} onChange={e => setEducation(e.target.value)} required>
                                 <option disabled selected required>Select Highest Education</option>
                                 <option>MSC</option>
                                 <option>BSC (Eng)</option>
@@ -111,17 +130,17 @@ const Volunteer = () => {
                                 <option>HSC</option>
                             </select>
                             <div className="form-control mt-4">
-                                <input type="name" placeholder="Enter Institution Name" className="border-2 p-3" required />
+                                <input type="name" placeholder="Enter Institution Name" name='institution' className="border-2 p-3" required />
                             </div>
                             <div className="form-control mt-4">
-                                <input type="date" placeholder="" className="border-2 p-3" required />
+                                <input type="date" placeholder="" name='birth' className="border-2 p-3" required />
                             </div>
-                            <select className="border-2 p-3 w-full mt-4">
+                            <select className="border-2 p-3 w-full mt-4" value={gender} onChange={e => setGender(e.target.value)}>
                                 <option disabled selected required>Select Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
-                            <select className="border-2 p-3 w-full mt-4">
+                            <select className="border-2 p-3 w-full mt-4" value={blood} onChange={e => setBlood(e.target.value)}>
                                 <option disabled selected>Select Blood Group</option>
                                 <option>A+</option>
                                 <option>A-</option>
@@ -132,7 +151,7 @@ const Volunteer = () => {
                                 <option>AB+</option>
                                 <option>AB-</option>
                             </select>
-                            <select className="border-2 p-3 w-full mt-4">
+                            <select className="border-2 p-3 w-full mt-4" value={shirt} onChange={e => setShirt(e.target.value)}>
                                 <option disabled selected>Select T-Shirt Size</option>
                                 <option>XXl</option>
                                 <option>XL</option>
@@ -141,13 +160,13 @@ const Volunteer = () => {
                                 <option>S</option>
                             </select>
                             <div className="form-control mt-4">
-                                <input type="phone" placeholder="Phone Number" minLength={11} className="border-2 p-3" required />
+                                <input type="phone" placeholder="Phone Number" name='phone' minLength={11} className="border-2 p-3" required />
                             </div>
                             <div className="form-control mt-4">
-                                <input type="email" placeholder="Your Email" className="border-2 p-3" required />
+                                <input type="email" placeholder="Your Email" name='email' className="border-2 p-3" required />
                             </div>
                             <div className="form-control mt-4">
-                                <input type="address" placeholder="Address" className="border-2 p-3" required />
+                                <input type="address" placeholder="Address" name='address' className="border-2 p-3" required />
                             </div>
                             <div className="form-control mt-5 card-actions justify-center">
                                 <button className="volunteer-submit-btn">Submit</button>
