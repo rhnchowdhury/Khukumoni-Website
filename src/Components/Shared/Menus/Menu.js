@@ -18,7 +18,7 @@ const Menu = () => {
     return (
         <div className='lg:mt-12 relative z-50'>
             <div className="menu bg-[#253E88] ">
-                <div className={isMobile ? 'nav-links-mobile font-bold space-y-2  text-white' : 'space-x-[59px] font-bold text-xl text-white relative ml-10 menu-links'}
+                <div className={isMobile ? 'nav-links-mobile font-bold space-y-2  text-white' : ' lg:space-x-[59px] font-bold text-xl text-white relative ml-10 menu-links'}
                     onClick={() => setIsMobile(false)}
                 >
                     <Link to='/' className='lg:inline block '>Home</Link>

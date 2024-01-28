@@ -133,7 +133,7 @@ const Volunteer = () => {
                                 <input type="name" placeholder="Enter Institution Name" name='institution' className="border-2 p-3" required />
                             </div>
                             <div className="form-control mt-4">
-                                <input type="date" placeholder="" name='birth' className="border-2 p-3" required />
+                                <input type='date' placeholder="Birth: dd-mm-year" name='birth' className="border-2 p-3 w-full" required />
                             </div>
                             <select className="border-2 p-3 w-full mt-4" value={gender} onChange={e => setGender(e.target.value)}>
                                 <option disabled selected required>Select Gender</option>

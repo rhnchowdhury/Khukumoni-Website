@@ -54,13 +54,15 @@ const Footer = () => {
                 </div>
                 <img src={bgImg1} alt="" className="absolute hidden lg:block  h-[94.63%] w-[41.17%] top-[0%] right-[-3.05%] bottom-[15.37%] left-[61.88%] max-w-full overflow-hidden max-h-full opacity-[0.35]" />
                 <div className="absolute h-[68.71%] w-[25.97%] top-[18.14%] right-[66.18%] bottom-[18.14%] left-[1.85%] lg:text-lg">
-                    <Link to='/'><b className="absolute top-[6%] lg:top-[0%] left-[31.82%]">Home</b></Link>
-                    <Link to='/about'><b className="absolute top-[15%] lg:top-[13.35%] left-[31.82%]">About Us</b></Link>
-                    <Link to='/program'><b className="absolute top-[23%] text-[13px] lg:text-lg lg:top-[25.69%] left-[31.82%]">Our Program</b></Link>
-                    <Link to='/volunteer'><b className="absolute top-[37%] text-[13px] lg:text-lg lg:top-[37.04%]  left-[31.82%]">Be a Volunteer</b></Link>
-                    <Link to='/news'><b className="absolute top-[51%] lg:top-[49.39%] left-[31.82%]">News</b></Link>
-                    <Link><b className="absolute top-[59%] lg:top-[60.39%] left-[31.82%]">Team</b></Link>
-                    <Link to='/contact'><b className="absolute top-[67%] lg:top-[71.68%] left-[31.82%]">Contact</b></Link>
+                    <Link to='/'><b className="absolute top-[10%] lg:top-[0%] left-[31.82%]">Home</b></Link>
+                    <Link to='/about'><b className="absolute top-[20%] lg:top-[13.35%] left-[31.82%]">About Us</b></Link>
+                    <Link to='/program'><b className="absolute top-[29%] text-[13px] lg:text-lg lg:top-[25.69%] left-[31.82%]">Program</b></Link>
+                    {/* <Link to='/program'><b className="absolute top-[23%] text-[13px] lg:text-lg lg:top-[25.69%] left-[31.82%]">Our Program</b></Link> */}
+                    <Link to='/volunteer'><b className="absolute top-[38%] text-[13px] lg:text-lg lg:top-[37.04%] left-[31.82%]">Volunteer</b></Link>
+                    {/* <Link to='/volunteer'><b className="absolute top-[37%] text-[13px] lg:text-lg lg:top-[37.04%]  left-[31.82%]">Be a Volunteer</b></Link> */}
+                    <Link to='/news'><b className="absolute top-[47%] lg:top-[49.39%] left-[31.82%]">News</b></Link>
+                    <Link><b className="absolute top-[56%] lg:top-[60.39%] left-[31.82%]">Team</b></Link>
+                    <Link to='/contact'><b className="absolute top-[65%] lg:top-[71.68%] left-[31.82%]">Contact</b></Link>
                 </div>
                 <img src={logo} alt="" className="absolute lg:top-[50px] left-[150px] lg:left-[523px] lg:w-[150px] lg:h-[160px] overflow-hidden" />
                 <div className="absolute lg:w-[17.01%] right-[0%] bottom-[0px] lg:left-[82.99%] bg-[#24316B] h-[30px] lg:h-[60px] flex flex-col items-end justify-center py-[27px] px-[38px] box-border">
