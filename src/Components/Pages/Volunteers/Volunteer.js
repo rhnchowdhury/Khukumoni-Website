@@ -102,11 +102,22 @@ const Volunteer = () => {
                             <div className="form-control mt-4">
                                 <input type="name" placeholder="Enter Your Name" className="border-2 p-3" required />
                             </div>
+                            <select className="border-2 p-3 w-full mt-4" required>
+                                <option disabled selected required>Select Highest Education</option>
+                                <option>MSC</option>
+                                <option>BSC (Eng)</option>
+                                <option>BA (Hon's)</option>
+                                <option>Degree</option>
+                                <option>HSC</option>
+                            </select>
+                            <div className="form-control mt-4">
+                                <input type="name" placeholder="Enter Institution Name" className="border-2 p-3" required />
+                            </div>
                             <div className="form-control mt-4">
                                 <input type="date" placeholder="" className="border-2 p-3" required />
                             </div>
                             <select className="border-2 p-3 w-full mt-4">
-                                <option disabled selected>Select Gender</option>
+                                <option disabled selected required>Select Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
