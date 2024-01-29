@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const VolunteerInfo = () => {
+    const [volunteer, setVolunteer] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:4000/volun')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setVolunteer(data)
+            })
+    }, [])
     return (
         <div className='mt-5'>
             <h2 className="card-title text-[#F7941D] text-center justify-center">Volunteer Information</h2>
@@ -33,6 +43,7 @@ const VolunteerInfo = () => {
                     <table className="table w-full border-collapse border border-slate-400 ">
                         <thead>
                             <tr className='font-extrabold text-[14px] text-black'>
+                                <th className='border border-slate-300'>No.</th>
                                 <th className='border border-slate-300'>Date</th>
                                 <th className='border border-slate-300'>Name</th>
                                 <th className='border border-slate-300'>Gender</th>
@@ -43,8 +54,21 @@ const VolunteerInfo = () => {
                                 <th className='border border-slate-300'>Action</th>
                             </tr>
                         </thead>
-                        <tbody className=' '>
-                            <tr className=''>
+                        <tbody className='border border-slate-300 '>
+                            {
+                                volunteer.map((volun, i) => <tr key={volun.ID}>
+                                    <th className='border border-slate-300 font-normal'>{i + 1}</th>
+                                    <th className='border border-slate-300 font-normal'>{volun.Date}</th>
+                                    <th className='border border-slate-300 font-normal'>{volun.Name}</th>
+                                    <th className='border border-slate-300 font-normal'>{volun.Gender}</th>
+                                    <th className='border border-slate-300 font-normal'>{volun.Phone}</th>
+                                    <th className='border border-slate-300 font-normal'>{volun.District}</th>
+                                    <th className='border border-slate-300 font-normal'>{volun.Division}</th>
+                                    <th className='border border-slate-300 font-normal'>{volun.Education}</th>
+                                    <th className='font-normal border border-slate-300'><Link to='/dashboard/volunteerInfo'><button className='btn btn-xs bg-[#F7941D] text-white hover:bg-[#F7941D]'>Details</button></Link></th>
+                                </tr>)
+                            }
+                            {/* <tr className=''>
                                 <th className='font-normal border border-slate-300'>1-2-23</th>
                                 <th className='font-normal border border-slate-300'>Raihan</th>
                                 <th className='font-normal border border-slate-300'>Shemale</th>
@@ -53,9 +77,7 @@ const VolunteerInfo = () => {
                                 <th className='font-normal border border-slate-300'>Barishal</th>
                                 <th className='font-normal border border-slate-300'>Student</th>
                                 <th className='font-normal border border-slate-300'><Link to='/dashboard/volunteerInfo'><button className='btn btn-xs bg-[#F7941D] text-white hover:bg-[#F7941D]'>Details</button></Link></th>
-
-                                {/* <td><button className='btn btn-xs btn-warning'>Details</button></td> */}
-                            </tr>
+                            </tr> */}
 
                         </tbody>
                     </table>

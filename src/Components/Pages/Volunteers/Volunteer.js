@@ -23,7 +23,16 @@ const Volunteer = () => {
         const volunInfo = { name, email, phone, address, district, institution, birth, division, education, gender, blood, shirt };
         console.log(volunInfo);
         event.target.reset();
+
+        fetch('http://localhost:4000/volun', {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(volunInfo),
+        });
     }
+
     return (
         <div className='mt-12'>
             <div className="hero lg:min-h-screen" style={{ backgroundImage: `url(${volunteerBg})` }}>
@@ -67,10 +76,10 @@ const Volunteer = () => {
             </div>
             <div className=" bg-[#E9F0FD] lg:py-20 py-10 lg:mt-16 mt-10">
                 <div className="hero-content flex-col lg:flex-row ">
-                    <div className="text-center lg:text-left lg:-mt-32 lg:mx-16">
+                    <div className="text-center lg:text-left lg:-mt-10 lg:mx-16">
                         <h1 className="lg:text-4xl text-2xl text-[#253E88]">Help The People With us</h1>
                         <h1 className="lg:text-4xl text-3xl text-[#24316B] font-bold">Need Your Heartful Help</h1>
-                        <p className="py-6 px-4 volunteer-p">Lorem Ipsum is simply dummy text of the printin typesetting  dummy text ever  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <p className="py-6 px-4 volunteer-p">Lorem Ipsum is simply dummy text of the printing type setting  dummy text ever  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             <br /> <br />
                             Bring to the table win-win survival strategies to proactive domination.  is on the runway heading towards a streamlined cloud solution. User gener eal-time will have multiple touch points for offshoring</p>
                         <div className=''>
@@ -133,7 +142,7 @@ const Volunteer = () => {
                                 <input type="name" placeholder="Enter Institution Name" name='institution' className="border-2 p-3" required />
                             </div>
                             <div className="form-control mt-4">
-                                <input type='date' placeholder="Birth: dd-mm-year" name='birth' className="border-2 p-3 w-full" required />
+                                <input placeholder="Birth: dd-mm-year" name='birth' className="border-2 p-3 w-full" required />
                             </div>
                             <select className="border-2 p-3 w-full mt-4" value={gender} onChange={e => setGender(e.target.value)}>
                                 <option disabled selected required>Select Gender</option>

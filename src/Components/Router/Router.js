@@ -33,6 +33,7 @@ import DonarInfo from "../Pages/Dashboard/AllDonar/DonarInfo";
 import PrivateRoute from "./Private/PrivateRoute";
 import PaymentSuccess from "../PaymentRoute/PaymentSuccess";
 import PaymentFail from "../PaymentRoute/PaymentFail";
+import PaymentCancel from "../PaymentRoute/PaymentCancel";
 
 
 const router = createBrowserRouter([
@@ -118,15 +119,21 @@ const router = createBrowserRouter([
             },
             {
                 path: '/donate',
-                element: <PrivateRoute><Donate></Donate></PrivateRoute>
+                element: <PrivateRoute>
+                    <Donate></Donate>
+                </PrivateRoute>
             },
             {
-                path: `/payment/success/:tran_id`,
+                path: `/payment/success`,
                 element: <PaymentSuccess></PaymentSuccess>
             },
             {
-                path: '/payment/fail/:tranId',
+                path: `/payment/fail`,
                 element: <PaymentFail></PaymentFail>
+            },
+            {
+                path: `/payment/cancel`,
+                element: <PaymentCancel></PaymentCancel>
             }
         ]
     },

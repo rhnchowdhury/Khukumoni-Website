@@ -1,30 +1,50 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import img1 from '../../../assets/logos/ssl-img.jpg';
+import { AuthContext } from '../../Context/AuthProvider';
 
 const Donate = () => {
     const [amount, setAmount] = useState();
     const [selects, setSelects] = useState();
+    const { user } = useContext(AuthContext);
+    console.log(user.name);
 
 
-    const handleButton = event => {
+
+    const handleButton = async event => {
         event.preventDefault();
-        const donation = { amount, selects }
-        console.log(donation)
-        fetch('http://localhost:4000/donate', {
-            method: 'POST',
+        const donation = { amount, category: selects, name: user?.name, email: user?.email }
+        console.log(donation);
+        // const donation = { amount, category: selects, name: "Something..." }
+
+        // const respone = await fetch('http://localhost:5000/api/payment/init', {
+        const respone = await fetch(process.env.REACT_APP_PAYMENT_URL, {
+            method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(donation),
         })
-            .then((res) => res.json())
-            .then((result) => {
-                window.location.replace(result.url)
-                console.log(result);
-            })
-
-
+        const { redirectURL } = await respone.json();
+        window.location.href = redirectURL
     }
+
+    // const handleButton = event => {
+    //     event.preventDefault();
+    //     const donation = { amount, selects }
+    //     console.log(donation)
+    //     fetch('http://localhost:4000/donate', {
+    //         method: 'POST',
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify(donation),
+    //     })
+    //         .then((res) => res.json())
+    //         .then((result) => {
+    //             window.location.replace(result.url)
+    //             console.log(result);
+    //         })
+    // }
 
     return (
         <section className='m-5 lg:m-10 p-5 lg:py-2 '>

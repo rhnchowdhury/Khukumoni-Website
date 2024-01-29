@@ -1,15 +1,15 @@
-const PaymentFail = () => {
+const PaymentCancel = () => {
     const style = {
         height: "50vh",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
-    };
+        alignItems: "center"
+    }
     return (
         <div className="p-5 " style={style}>
-            <h1 className="text-4xl font-bold">Payment Failed! Try Again.</h1>
+            <h1 className="text-4xl font-bold">Payment Canceled! Try Again.</h1>
         </div>
     );
 };
 
-export default PaymentFail;
+export default PaymentCancel;
