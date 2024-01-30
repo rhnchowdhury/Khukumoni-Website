@@ -1,33 +1,40 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
-// import { useForm } from 'react-hook-form';
 
 const Login = () => {
-    // const { register, formState: { errors }, handleSubmit } = useForm();
     const { login } = useContext(AuthContext);
-    // const [loginError, setLoginError] = useState('');
+    const [loginError, setLoginError] = useState('');
     const navigate = useNavigate();
 
     const handleLogin = event => {
         event.preventDefault();
         const name = event.target.name.value;
-        const account = event.target.email.value;
+        const email = event.target.email.value;
         const password = event.target.password.value;
-        const logUser = { name, account, password };
-        console.log(logUser);
+        const logUser = { name, email, password };
+        // console.log(logUser);
         event.target.reset();
         // setLoginError('');
 
-        login(account, password)
+        login(email, password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                setLoginError('');
                 navigate('/donate');
+
+
+                // if (user.emailVerified) {
+                //     navigate('/donate');
+                // }
+                // else {
+                //     toast.error('Your email is not verified. Please verify your email');
+                // }
             })
-            .then(error => {
+            .catch(error => {
                 console.log(error)
-                // setLoginError(error.message)
+                setLoginError(error.message)
             })
 
 
@@ -39,14 +46,7 @@ const Login = () => {
             body: JSON.stringify(logUser),
         })
     };
-    // useEffect(() => {
-    //     fetch('http://localhost:4000/db')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data)
-    //             setUser(data)
-    //         })
-    // }, [])
+
     return (
         <section className='m-5 lg:m-10 p-5 lg:py-2 '>
             <div className='flex justify-center items-center my-10 '>
@@ -67,7 +67,7 @@ const Login = () => {
                             {/* {errors.name && <p className='text-error'>{errors.name?.message}</p>} */}
                         </div>
                         <div className=''>
-                            <label className="label"><span className="label-text lg:font-bold font-semibold text-white">Account No.</span></label>
+                            <label className="label"><span className="label-text lg:font-bold font-semibold text-white">Email</span></label>
                             <input type='email' name='email'
                                 // {...register("email",
                                 //     {
@@ -93,10 +93,7 @@ const Login = () => {
                         {/* {loginError && <p className='text-error'>{loginError}</p>} */}
                         <p className='text-white lg:font-medium mt-2'>New to Khukumoni? <Link to='/signin' className='text-[#F8AD51] lg:font-bold font-semibold'>Create an account</Link></p>
                     </form>
-                    {/* <div className="divider">OR</div> */}
-                    {/* <div className='card-actions justify-center'>
-                    <button onClick={handleGoogleSignIn} className='btn btn-outline w-full max-w-xs text-error'>CONTINUE WITH GOOGLE</button>
-                </div> */}
+                    <p className='text-red-600'>{loginError}</p>
                 </div>
             </div>
         </section>

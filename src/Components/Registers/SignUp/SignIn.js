@@ -1,12 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
+import toast from 'react-hot-toast';
 
 const SignIn = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, updateUser, verifyEmail } = useContext(AuthContext);
+    const [error, setError] = useState('');
     const navigate = useNavigate();
-    // const [token] = useToken(createdUserEmail);
 
+    // const [token] = useToken(createdUserEmail);
     // if (token) {
 
     // }
@@ -26,9 +28,30 @@ const SignIn = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                setError('');
+                const userInfo = {
+                    displayName: name
+                }
+                updateUser(userInfo)
+                    .then(() => { })
+                    .catch(err => console.error(err));
+
+                handleEmailVerify();
+                toast.success('Please verify your email address')
                 navigate('/donate');
+
+                // navigate(from,{replace:true});
+                // if (user.emailVerified) {
+                //     navigate('/donate');
+                // }
+                // else {
+                //     toast.error('Your email is not verified. Please verify your email');
+                // }
             })
-            .catch(err => console.error(err))
+            .catch(err => {
+                console.error(err);
+                setError(err.message);
+            })
 
         fetch('http://localhost:4000/sign', {
             method: 'POST',
@@ -37,11 +60,15 @@ const SignIn = () => {
             },
             body: JSON.stringify(user),
         })
-        // .then(res => res.json())
-        // .then(data => {
-        //     setInfo(data.user);
-        // })
+
+        const handleEmailVerify = () => {
+            verifyEmail()
+                .then(() => { })
+                .catch(error => console.error(error))
+        }
+
     };
+
     return (
         <section className='m-5 lg:m-10 p-5 lg:py-2 '>
             <div className='flex justify-center items-center my-10 '>
@@ -71,6 +98,8 @@ const SignIn = () => {
                         </div>
                         <p className='text-white font-medium mt-2'>Already have an account ? <Link to='/login' className='text-[#F8AD51] lg:font-bold'>Please Login</Link></p>
                     </form>
+                    <p className='text-red-600'>{error}</p>
+
                 </div>
             </div>
         </section>

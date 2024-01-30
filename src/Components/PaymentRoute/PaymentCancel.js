@@ -7,7 +7,7 @@ const PaymentCancel = () => {
     }
     return (
         <div className="p-5 " style={style}>
-            <h1 className="text-4xl font-bold">Payment Canceled! Try Again.</h1>
+            <h1 className="text-4xl font-bold">Payment Successfully Canceled! Try Again.</h1>
         </div>
     );
 };
